@@ -48,6 +48,7 @@ body {
 	text-decoration: none;
 	text-transform: uppercase;
 }
+
 .back-btn:hover {
 	background-color: #fff;
 	color: rgb(153, 18, 74);
@@ -95,11 +96,11 @@ body {
 	opacity: .6;
 }
 
-.weather-city:hover {
+.weather-city:hover .hover-dick{
 	opacity: .5;
 }
 
-.hover-dick:hover {
+.weather-city .hover-dick:hover {
 	opacity: 1;
 }
 
