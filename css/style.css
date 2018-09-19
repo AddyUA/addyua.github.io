@@ -1,8 +1,8 @@
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 	box-sizing: inherit;
 }
 
@@ -12,10 +12,10 @@ html {
 
 body {
 	font-family: "Oxygen", sans-serif;
-  font-weight: 300;
-  line-height: 1.7;
-  color: #555;
-  /* padding: 1rem; */
+	font-weight: 300;
+	line-height: 1.7;
+	color: #555;
+	/* padding: 1rem; */
 	box-sizing: border-box;
 	background-color: #bebebe;
 }
@@ -25,9 +25,9 @@ body {
 
 header {
 	height: 100vh;
-	background-image:linear-gradient(rgba(0, 0, 0, 0.5),
-	rgba(17, 1, 8, 0.3)),
-	url(../img/header-image-wide-1-min.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+		rgba(17, 1, 8, 0.3)),
+		url(../img/header-image-wide-1-min.jpg);
 	background-size: cover;
 	background-position: top;
 	position: relative;
@@ -47,7 +47,7 @@ header {
 .header__text-box {
 	padding: 1rem 2rem;
 	background-color: rgba(31, 31, 31, 0.6);
-	text-align: center;	
+	text-align: center;
 	line-height: 5rem;
 	position: absolute;
 	top: 58%;
@@ -107,8 +107,8 @@ header {
 
 .header__nav {
 	background-color: rgba(48, 48, 48, 0.9);
-		width: 100%;
-		padding: 2rem;
+	width: 100%;
+	padding: 2rem;
 	font-size: 1.6rem;
 }
 

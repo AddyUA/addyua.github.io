@@ -66,7 +66,7 @@ body {
 
 .weather {
 	max-width: 700px;
-	margin: 160px auto auto;
+	margin: 60px auto auto;
 }
 
 .weather-city {
@@ -96,7 +96,7 @@ body {
 	opacity: .6;
 }
 
-.weather-city:hover li{
+.weather-city:hover li {
 	opacity: .5;
 }
 
