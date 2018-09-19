@@ -29,6 +29,31 @@ body {
 	border: 20px solid #fff;
 }
 
+.back-btn {
+	display: block;
+	text-align: center;
+	position: fixed;
+	bottom: 8%;
+	left: 50%;
+	width: 100px;
+	font-size: 16px;
+	padding: 10px;
+	background-color: rgb(153, 18, 74);
+	border-radius: 10px;
+	transform: translate(-50%, -50%);
+}
+
+.back-btn:link,
+.back-btn:visited {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.back-btn:hover {
+	background-color: #fff;
+	color: rgb(153, 18, 74);
+}
+
 .bg_grey {
 	background-color: #4A4F56;
 }
