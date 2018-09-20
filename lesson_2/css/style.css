@@ -4,6 +4,7 @@
 	#MAIN
 	#WIDTH
 	#COLORS
+	
 */
 
 *,
@@ -56,17 +57,17 @@ body {
 
 /* #MAIN */
 
+.weather {
+	max-width: 700px;
+	margin: 60px auto auto;
+}
+
 .weather p {
 	margin: 18px 0;
 }
 
 .under {
 	font-size: 24px;
-}
-
-.weather {
-	max-width: 700px;
-	margin: 60px auto auto;
 }
 
 .weather-city {
