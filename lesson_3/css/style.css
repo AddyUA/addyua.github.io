@@ -1,16 +1,8 @@
-	/* 
-				MAP
-
+/* 
 	Цвет текста в поиске и ссылки при наведении #ec5a62;
 	Цвет текста и placeholder’a #c2c2c2
 	Фон ссылки rgba(118,117,128,0.05)
-	Фон ссылки при наведении rgba(118,117,128,0.1)
-
-	#MAIN
-	#WIDTH
-	#COLORS
-
-	*/
+	Фон ссылки при наведении rgba(118,117,128,0.1) */
 
 *,
 *:after,
@@ -18,13 +10,12 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	transition: all .2s ease-in;
+	transition: all .1s ease-in;
 }
 
 html,
 body {
 	width: 100%;
-	height: 100%;
 }
 
 body {
@@ -33,32 +24,66 @@ body {
 	background-color: #f1f1f1;
 }
 
-	/* BTN */
+/* #BTN */
 
-.back-btn {
-	display: block;
-	text-align: center;
-	position: fixed;
-	bottom: 8%;
+.nav-btns {
+	position: absolute;
+	bottom: 5%;
 	left: 50%;
-	width: 100px;
-	font-size: 16px;
-	padding: 10px;
-	background-color: rgb(153, 18, 74);
-	border-radius: 10px;
+	width: 460px;
+	/* border: 1px solid #000; */
 	transform: translate(-50%, -50%);
 }
 
-.back-btn:link,
-.back-btn:visited {
+.nav-btns a {
+	display: inline-block;
+	text-align: center;
+	width: 24%;
+	font-size: 16px;
+	margin-right: 30px;
+	padding: 15px;
+	background-color: rgb(153, 18, 74);
+	border-radius: 10px;
+}
+
+.nav-btns a:first-child {
+	margin-left: 29px;
+}
+
+.nav-btns a:link,
+.nav-btns a:visited {
 	color: #fff;
 	text-decoration: none;
 	text-transform: uppercase;
+	transition: all .3s;
 }
 
-.back-btn:hover {
+.nav-btns a:hover {
 	background-color: #fff;
 	color: rgb(153, 18, 74);
+}
+
+.search-btn {
+	right: 0;
+	height: 70px;
+	width: 70px;
+	padding-top: 15px;
+	margin-left: 25px;
+	background: transparent url(../img/magnifier.svg) no-repeat center center;
+	cursor: pointer;
+	overflow: hidden;
+	border: none;
+}
+
+.main-list a:link,
+.main-list a:visited {
+	text-decoration: none;
+	color: #c2c2c2;
+}
+
+.main-list a:hover {
+	color: #ec5a62;
+	background-color: rgba(118, 117, 128, 0.1);
 }
 
 /* #MAIN */
@@ -66,11 +91,66 @@ body {
 .searcher {
 	min-width: 400px;
 	max-width: 960px;
-	margin: 60px auto auto;
-	border: 1px solid #fff;
+	margin: 80px auto auto;
 }
 
+.searcher form {
+	display: block;
+	position: relative;
+	width: 100%;
+	margin-bottom: 20px;
+}
 
-ul, li, span {
+input {
 	display: inline-block;
+	background: transparent;
+	width: 80%;
+	font-weight: 600;
+	font-size: 72px;
+	border: none;
+	color: #c2c2c2;
+}
+
+input:focus {
+	background-color: rgba(118, 117, 128, 0.1);
+	color: #ec5a62;
+}
+
+.main-list div {
+	display: inline-block;
+	width: 30%;
+	margin-right: 25px;
+}
+
+h2 {
+	margin: 20px 0;
+	text-transform: uppercase;
+}
+
+.main-list li {
+	font-size: 14px;
+	font-weight: 600;
+	width: 100%;
+	list-style: none;
+	display: inline-block;
+	position: relative;
+}
+
+.main-list a {
+	padding: 10px;
+	border-radius: 5px;
+	display: block;
+}
+
+.img-circle {
+	width: 50px;
+	border-radius: 50%;
+}
+
+.main-list span {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 25%;
+	transform: translate(0, -50%);
 }
