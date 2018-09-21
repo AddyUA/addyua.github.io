@@ -31,7 +31,6 @@ body {
 	bottom: 5%;
 	left: 50%;
 	width: 460px;
-	/* border: 1px solid #000; */
 	transform: translate(-50%, -50%);
 }
 
@@ -63,20 +62,6 @@ body {
 	color: rgb(153, 18, 74);
 }
 
-.search-btn {
-	position: absolute;
-	right: 30px;
-	top: 5px;
-	height: 70px;
-	width: 70px;
-	padding-top: 15px;
-	margin-left: 25px;
-	background: transparent url(../img/magnifier.svg) no-repeat center center;
-	cursor: pointer;
-	overflow: hidden;
-	border: none;
-}
-
 .main-list a:link,
 .main-list a:visited {
 	text-decoration: none;
@@ -93,7 +78,8 @@ body {
 .searcher {
 	min-width: 400px;
 	max-width: 960px;
-	margin: 80px auto auto;
+	margin: 60px auto auto;
+	/* border: 1px solid #000; */
 }
 
 .searcher form {
@@ -101,27 +87,48 @@ body {
 	position: relative;
 	width: 100%;
 	margin-bottom: 20px;
+	/* border: 1px solid #000; */
 }
 
-input {
+.place {
 	display: inline-block;
 	background: transparent;
-	width: 80%;
+	width: 91%;
 	font-weight: 600;
 	font-size: 72px;
 	border: none;
-	color: #c2c2c2;
+	color: #ec5a62;
+	/* border: 1px solid #000; */
 }
 
 input:focus {
 	background-color: rgba(118, 117, 128, 0.1);
-	color: #c2c2c2;
+	/* color: #c2c2c2; */
+}
+
+.search-btn {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 85px;
+	width: 85px;
+	padding-top: 15px;
+	margin-left: 25px;
+	background: transparent url(../img/magnifier.svg) no-repeat center center;
+	cursor: pointer;
+	overflow: hidden;
+	border: none;
+	/* border: 1px solid #000; */
 }
 
 .main-list div {
 	display: inline-block;
 	width: 30%;
-	margin-right: 25px;
+	/* border: 1px solid #000; */
+}
+
+.main-list div:not(:last-child) {
+	margin-right: 43px;
 }
 
 h2 {
@@ -130,21 +137,30 @@ h2 {
 }
 
 .main-list li {
-	background-color: rgba(118,117,128,.1);
+	background-color: rgba(118, 117, 128, .1);
 	min-height: 75px;
 	font-size: 14px;
 	font-weight: 600;
 	width: 100%;
-	margin-bottom: 5px;
 	list-style: none;
 	display: inline-block;
 	position: relative;
+	/* border: 1px solid #000; */
+}
+
+.main-list li:not(:last-child) {
+	margin-bottom: 5px;
 }
 
 .main-list a {
 	padding: 10px;
 	border-radius: 5px;
 	display: block;
+}
+
+.main-list img {
+	display: inline-block;
+	margin-top: 3px;
 }
 
 .img-circle {
@@ -158,4 +174,21 @@ h2 {
 	top: 50%;
 	left: 25%;
 	transform: translate(0, -50%);
+}
+
+
+::-webkit-input-placeholder {
+	color: #c2c2c2;
+}
+
+::-moz-placeholder {
+	color: #c2c2c2;
+}
+
+:-moz-placeholder {
+	color: #c2c2c2;
+}
+
+:-ms-input-placeholder {
+	color: #c2c2c2;
 }
