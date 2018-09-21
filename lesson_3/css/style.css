@@ -64,7 +64,9 @@ body {
 }
 
 .search-btn {
-	right: 0;
+	position: absolute;
+	right: 30px;
+	top: 5px;
 	height: 70px;
 	width: 70px;
 	padding-top: 15px;
@@ -113,7 +115,7 @@ input {
 
 input:focus {
 	background-color: rgba(118, 117, 128, 0.1);
-	color: #ec5a62;
+	color: #c2c2c2;
 }
 
 .main-list div {
@@ -128,9 +130,12 @@ h2 {
 }
 
 .main-list li {
+	background-color: rgba(118,117,128,.1);
+	min-height: 75px;
 	font-size: 14px;
 	font-weight: 600;
 	width: 100%;
+	margin-bottom: 5px;
 	list-style: none;
 	display: inline-block;
 	position: relative;
