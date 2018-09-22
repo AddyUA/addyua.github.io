@@ -76,7 +76,6 @@ body {
 /* #MAIN */
 
 .searcher {
-	min-width: 400px;
 	max-width: 960px;
 	margin: 60px auto auto;
 	/* border: 1px solid #000; */
@@ -84,21 +83,23 @@ body {
 
 .searcher form {
 	display: block;
+	min-height: 85px;
 	position: relative;
 	width: 100%;
 	margin-bottom: 20px;
-	/* border: 1px solid #000; */
+	border: 1px solid #000;
 }
 
 .place {
 	display: inline-block;
 	background: transparent;
-	width: 91%;
+	width: 865px;
+	min-height: 85px;
 	font-weight: 600;
 	font-size: 72px;
 	border: none;
 	color: #ec5a62;
-	/* border: 1px solid #000; */
+	border: 1px solid #000;
 }
 
 input:focus {
@@ -107,18 +108,18 @@ input:focus {
 }
 
 .search-btn {
-	position: absolute;
-	right: 0;
-	top: 0;
+	/* position: absolute; */
+	/* right: 0;
+	top: 0; */
 	height: 85px;
 	width: 85px;
-	padding-top: 15px;
-	margin-left: 25px;
+	/* padding-top: 15px; */
+	/* margin-left: 25px; */
 	background: transparent url(../img/magnifier.svg) no-repeat center center;
 	cursor: pointer;
 	overflow: hidden;
 	border: none;
-	/* border: 1px solid #000; */
+	border: 1px solid #000;
 }
 
 .main-list div {
