@@ -83,8 +83,8 @@ body {
 
 .searcher form {
 	display: block;
-	min-height: 85px;
-	position: relative;
+	/* min-height: 85px; */
+	/* position: relative; */
 	width: 100%;
 	margin-bottom: 20px;
 	border: 1px solid #000;
@@ -94,7 +94,7 @@ body {
 	display: inline-block;
 	background: transparent;
 	width: 865px;
-	min-height: 85px;
+	/* min-height: 85px; */
 	font-weight: 600;
 	font-size: 72px;
 	border: none;
