@@ -5,8 +5,6 @@ font-family: 'Raleway', sans-serif;
 *,
 *:before,
 *:after {
-	margin: 0;
-	padding: 0;
   box-sizing: border-box;
 }
 
@@ -26,6 +24,10 @@ body {
 .container {
   max-width: 1200px;
   margin: auto;
+}
+
+h1, h2 {
+	margin: 0;
 }
 
 .cf,
@@ -185,6 +187,10 @@ a:visited {
 .featured__bot {
 	margin-top: 60px;
 	width: 100%;
+}
+
+.featured__bot ul {
+	padding: 0;
 }
 
 .featured__bot ul li,
