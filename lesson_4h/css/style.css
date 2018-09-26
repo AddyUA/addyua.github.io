@@ -158,11 +158,11 @@ a:visited {
 
 .featured_area {
 	width: 1060px;
-	text-align: center;
-	margin: 120px auto;
+	margin: 90px auto;
 }
 
 .featured__top {
+	text-align: center;
 	width: 100%;
 }
 
@@ -187,19 +187,24 @@ a:visited {
 	width: 100%;
 }
 
-.featured__bot ul {
-	list-style: none;
-}
-
 .featured__bot ul li,
 .featured__bot ul li a {
 	display: inline-block;
 }
 
 .li-1-3 {
-	width: 25%;
+	width: 30%;
 }
 
 .li-1-7 {
 	width: 65%;
+}
+
+.featured__bot .good-a {
+	margin-right: 36px;
+	margin-bottom: 36px;
+}
+
+.featured__bot .good-b {
+	margin-right: 42px;
 }
