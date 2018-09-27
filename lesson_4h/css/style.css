@@ -245,19 +245,34 @@ a:visited {
 }
 
 .news-section__input-left {
-	width: 70%;
-	padding: 20px 0 20px 60px;
+	width: 60%;
+	padding: 25px 0 25px 60px;
 	border: transparent;
-	border-radius: 30px 0 0 30px;
+	border-radius: 35px 0 0 35px;
 	font-style: italic;
 	font-weight: 700;
 	color: rgba(48, 48, 48, 0.7);
 }
 
 .news-section__input-right {
-	width: 30%;
+	position: relative;
+	left: -4px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+	width: 25%;
+	cursor: pointer;
+	border: transparent;
+	padding: 25px;
+	color: #fff;
+	border-radius: 0 35px 35px 0;
+	background-color: #e10011;
+	transition: all .2s;
 }
 
+.news-section__input-right:hover {
+	color: #303030;
+}
 /* #FOOTER_SECTION */
 
 
