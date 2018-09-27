@@ -241,8 +241,16 @@ a:visited {
 }
 
 .subscribe-section__form {
+	position: relative;
   width: 70%;
   margin: 40px auto;
+}
+
+.subscribe-section__form i {
+	color: rgba(48, 48, 48, 0.5);
+	position: absolute;
+	left: 89px;
+	top: 26px;
 }
 
 .subscribe-section__input-left,
@@ -257,7 +265,6 @@ a:visited {
   border-radius: 35px 0 0 35px;
   font-style: italic;
   font-weight: 700;
-  color: rgba(48, 48, 48, 0.7);
 }
 
 .subscribe-section__input-right {
