@@ -1,0 +1,99 @@
+.chess {
+    border-collapse: collapse;
+}
+.chess tr {
+    border-collapse: collapse;
+    background-image: -webkit-linear-gradient(left, #AB3E23 0%, #3D160D 100%);
+}
+.chess th {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    border-collapse: collapse;
+    height: 25px;
+    width: 25px;
+}
+.chess td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 90px;
+    height: 90px;
+}
+
+/* +++++++++++++++++++++++++++++++++++++ */
+
+.deskW:nth-child(1n) {
+    background-color: rgb(236, 179, 126);
+}
+.deskW:nth-child(2n) {
+    background-color: rgb(155, 73, 6);
+}
+.deskB:nth-child(1n) {
+    background-color: rgb(155, 73, 6);
+}
+.deskB:nth-child(2n) {
+    background-color: rgb(236, 179, 126);
+}
+
+/* +++++++++++++++++++++++++++++++++++++ */
+
+.figureW:nth-child(1n) {
+    background: url(chess/chess.png) rgb(236, 179, 126) no-repeat;
+}
+.figureW:nth-child(2n) {
+    background: url(chess/chess.png) rgb(155, 73, 6) no-repeat;
+}
+.figureB:nth-child(1n) {
+    background: url(chess/chess.png) rgb(155, 73, 6) no-repeat;
+}
+.figureB:nth-child(2n) {
+    background: url(chess/chess.png) rgb(236, 179, 126) no-repeat;
+}
+
+/* +++++++++++++++++++++++++++++++++++++ */
+
+.figureW.rookB {
+    background-position: 6px -100px;
+}
+.figureW.knightBL {
+    background-position: -83px -100px;
+}
+.figureW.bishopB {
+    background-position: -172px -100px;
+}
+.figureW.queenB {
+    background-position: -263px -100px;
+}
+.figureW.kingB {
+    background-position: -350px -100px;
+}
+.figureW.knightBR {
+    background-position: -443px -100px;
+}
+.figureB.pawnB {
+    background-position: -528px -100px;  
+} 
+
+/* +++++++++++++++++++++++++++++++++++++ */
+
+.figureB.rookW {
+    background-position: 6px -2px;
+}
+.figureB.knightWL {
+    background-position: -83px -2px;
+}
+.figureB.bishopW {
+    background-position: -172px -2px;
+}
+.figureB.queenW {
+    background-position: -263px -2px;
+}
+.figureB.kingW {
+    background-position: -350px -2px;
+}
+.figureB.knightWR {
+    background-position: -443px -2px;
+}
+.figureW.pawnW {
+    background-position: -528px -2px;  
+} 
