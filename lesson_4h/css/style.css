@@ -44,6 +44,19 @@ h2 {
   clear: both;
 }
 
+::-webkit-input-placeholder {
+  color: rgba(60, 73, 85, 0.3);
+}
+::-moz-placeholder {
+  color: rgba(60, 73, 85, 0.3);
+} /* Firefox 19+ */
+:-moz-placeholder {
+  color: rgba(60, 73, 85, 0.3);
+} /* Firefox 18- */
+:-ms-input-placeholder {
+  color: rgba(60, 73, 85, 0.3);
+}
+
 /* #COMMON_LINKS */
 
 a:link,
@@ -247,7 +260,7 @@ a:visited {
 }
 
 .subscribe-section__form i {
-	color: rgba(48, 48, 48, 0.5);
+	color: rgba(48, 48, 48, 0.3);
 	position: absolute;
 	left: 89px;
 	top: 26px;
