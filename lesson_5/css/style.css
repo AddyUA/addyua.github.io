@@ -81,8 +81,7 @@ body {
 }
 
 .main-card__logo {
-	padding-top: 20px;
-	margin: 0 15px;
+	padding: 20px 0 0 15px;
 }
 
 .main-card__logo a {
@@ -96,22 +95,18 @@ body {
 /* #LEFT-SECTION */
 
 .item__section-left {
-	width: 54%;
+	width: 64%;
 	padding-top: 70px;
-	margin-right: 80px;
 	float: left;
+	text-align: center;
 }
 
 .item__block {
-	float: right;
+	display: inline-block;
 }
 
 .item__shoes {
 	margin-bottom: 50px;
-}
-
-.item__scroll {
-	text-align: center;
 }
 
 .item__scroll ul li {
