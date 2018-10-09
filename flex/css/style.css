@@ -1,0 +1,87 @@
+
+@font-face {
+	font-family: "Miso";
+	src: url(../fonts/miso-light-webfont.eot), url(../fonts/miso-light-webfont.ttf), url(../fonts/miso-light-webfont.woff);
+	font-weight: 100;
+}
+
+@font-face {
+	font-family: "Miso";
+	src: url(../fonts/miso-regular-webfont.ttf), url(../fonts/miso-regular-webfont.woff);
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: "Miso";
+	src: url(../fonts/miso-bold-webfont.eot), url(../fonts/miso-bold-webfont.ttf);
+	font-weight: 700;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	transition: all .3s;
+}
+
+html,
+body {
+	height: 100vh;
+}
+
+body {
+	font-family: "Miso", sans-serif;
+	color: #333333;
+	background-color: rgb(223, 209, 175);
+}
+
+.container {
+	max-width: 1200px;
+	height: 600px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #fdde7e;
+	margin: 50px auto;
+	padding: 0 15px;
+	border-radius: 3px;
+	box-shadow: 0 0 25px rgba(95, 74, 3, 0.2);
+	position: relative;
+}
+
+.container__element {
+	width: 360px;
+	padding: 25px 0;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 5px;
+	box-shadow: 0 3px 3px rgba(95, 44, 3, 0.3);
+	background-color: #fff;
+}
+
+.side {
+	height: 440px;
+}
+
+.center {
+	height: 500px;
+}
+
+.dollar {
+	font-size: 70px;
+	letter-spacing: 2px;
+	color: #02995b;
+	font-weight: 700;
+}
+
+.element {
+	font-size: 56px;
+}
+
+.small {
+	font-size: 24px;
+	font-weight: 100;
+}
