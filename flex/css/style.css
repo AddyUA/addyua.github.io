@@ -21,7 +21,6 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	transition: all .3s;
 }
 
 html,
@@ -39,11 +38,11 @@ body {
 	max-width: 1200px;
 	height: 600px;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 	background-color: #fdde7e;
 	margin: 50px auto;
-	padding: 0 15px;
+	padding: 0 30px;
 	border-radius: 3px;
 	box-shadow: 0 0 25px rgba(95, 74, 3, 0.2);
 	position: relative;
@@ -51,11 +50,11 @@ body {
 
 .container__element {
 	width: 360px;
-	padding: 25px 0;
 	text-align: center;
+	padding: 25px 0;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 	border-radius: 5px;
 	box-shadow: 0 3px 3px rgba(95, 44, 3, 0.3);
@@ -70,18 +69,20 @@ body {
 	height: 500px;
 }
 
-.dollar {
+.container__element span {
 	font-size: 70px;
 	letter-spacing: 2px;
 	color: #02995b;
 	font-weight: 700;
 }
 
-.element {
+.container__element h2 {
 	font-size: 56px;
+	letter-spacing: 2px;
+	font-weight: 300;
 }
 
-.small {
-	font-size: 24px;
+.container__element p {
+	font-size: 26px;
 	font-weight: 100;
 }
