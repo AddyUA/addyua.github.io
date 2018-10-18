@@ -1,0 +1,19 @@
+@import url("grid.css");
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+  min-height: 100vh;
+}
+
+body {
+	padding: 12px 0;
+}
+
+
