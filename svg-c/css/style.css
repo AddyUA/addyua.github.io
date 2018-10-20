@@ -1,0 +1,128 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  font-size: 100%;
+	font-family: "Open Sans", sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url("http://photo-1.ru/wp-content/uploads/2016/12/gory-sneg-zima-noch-mlechnyi-put.jpg") no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+body::before {
+}
+
+body::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 0;
+	background-color: rgba(0, 0, 0, .7);
+}
+
+.container {
+	max-width: 1200px;
+	width: 100%;
+	padding: 50px 0;
+	position: relative;
+	z-index: 1;
+	text-align: center;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	display: inline-block;
+	position: relative;
+}
+
+form label {
+	display: block;
+	font-size: 2em;
+	color: #fff;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	border: 2px solid transparent;
+}
+
+input[type="radio"] {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+}
+
+input[type="radio"]:checked + label {
+	border-color: #fff;
+}
+
+/* .color-div {
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	background-color: red;
+	border: 10px solid green;
+	box-shadow:
+	 0 0 0 10px orangered,
+	 0 0 0 20px blue;
+	 border-radius: 50%;
+} */
+
+.border-div {
+	position: relative;
+	border: 2px solid #fff;
+	border-top: none;
+	padding: 50px 0;
+	color: #fff;
+}
+
+.border-div::before,
+.border-div::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 35%;
+	border-top: 2px solid #fff;
+}
+
+.border-div::before { left: 0; }
+
+.border-div::after { right: 0; }
+
+h1 {
+	position: absolute;
+	width: 100%;
+	top: -18px;
+	left: 0;
+	text-align: center;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.inner-div {
+	max-width: 80%;
+	margin: auto;
+}
