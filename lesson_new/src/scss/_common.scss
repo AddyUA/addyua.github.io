@@ -1,0 +1,46 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	widows: 100%;
+	height: 100vh;
+}
+
+body {
+	font-size: 100%;
+	font-family: $main-font;
+	color: $white-color;
+}
+
+ul>li>a {
+	display: block;
+	text-decoration: none;
+}
+
+.row-faic {
+	display: flex;
+	align-items: center;
+}
+
+@for $i from 1 through 6 {
+	h#{$i} {
+		margin: 0;
+	}
+}
+
+.arrow-link {
+	font-weight: bold;
+	text-decoration: none;
+	color: $white-color;
+
+	&:hover {
+		color: $pink-color;
+	}
+
+	.fa-arrow-right {
+		margin-left: .5rem;
+	}
+}
