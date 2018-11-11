@@ -1,0 +1,129 @@
+.section-header {
+	min-width: 100%;
+	min-height: 100vh;
+	background-image: url(img/header.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	color: $dark-color;
+	position: relative;
+}
+
+.main-header {
+	position: fixed;
+	top: 0;
+	width: 1200px;
+}
+
+.header-top {
+	
+	padding-top: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	background-color: rgba($white-color, .1);
+
+	&__logo:link,
+	&__logo:visited {
+		font-family: $font-pacifico;
+		line-height: 25px;
+		font-size: 50px;
+		transition: color .3s;
+	}
+
+	&__logo:hover,
+	&__logo:active {
+		color: $blog-btn;
+	}
+	
+	&__nav-menu {
+		list-style: none;		
+		line-height: 25px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;		
+	}
+
+	&__item {
+		display: inline-block;
+	}
+
+	&__link--active {
+		text-transform: uppercase;
+		font-weight: bold;
+		padding-top: 5px;
+		border-top: 2px solid $blog-btn;
+	}
+	
+	&__link:link,
+	&__link:visited {
+		text-transform: uppercase;
+		font-weight: bold;
+		padding-top: 10px;
+		border-top: 2px solid transparent;
+		transition: all .2s ease-out;
+	}
+	
+	
+	&__link:hover,
+	&__link:active {
+		padding-top: 5px;
+		border-top: 2px solid $blog-btn;
+	} 
+}
+
+.main-content {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+
+	& > :not(:last-child) {
+		margin-bottom: 25px;
+	}
+
+	&__title > * {
+		text-transform: capitalize;
+		font-size: 60px;
+	}
+
+	&__text {
+		font-size: 17px;
+		font-weight: 300;
+	}
+
+	&__btn {
+		width: 50%;
+		height: 55px;
+		background-color: $header-btn;
+		border: none;
+		border-radius: 2px;
+		text-transform: uppercase;
+		box-shadow: 0 2px 5px rgba($dark-color, .5);
+		transition: all .3s;
+	}
+
+	&__btn:hover,
+	&__btn:active {
+		background-color: $blog-btn;
+	}
+	
+	&__link {
+		display: inline-block;	
+		color: $white-color;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.main-scroll {
+	position: absolute;
+	bottom: 70px;
+	left: 50%;
+	transform: translateX(-50%);
+}

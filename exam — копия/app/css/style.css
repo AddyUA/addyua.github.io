@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,700");
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.row {
+  clear: both;
+  margin-right: -15px;
+  margin-left: -15px; }
+  .row::before, .row::after {
+    content: "";
+    display: block;
+    clear: both; }
+  .row .col-1, .row .col-2, .row .col-3, .row .col-4, .row .col-5, .row .col-6, .row .col-7, .row .col-8, .row .col-9, .row .col-10, .row .col-11, .row .col-12 {
+    float: left;
+    padding: 0 15px;
+    min-height: 1px; }
+  .row .col-1 {
+    width: 8.33333%; }
+  .row .col-2 {
+    width: 16.66667%; }
+  .row .col-3 {
+    width: 25%; }
+  .row .col-4 {
+    width: 33.33333%; }
+  .row .col-5 {
+    width: 41.66667%; }
+  .row .col-6 {
+    width: 50%; }
+  .row .col-7 {
+    width: 58.33333%; }
+  .row .col-8 {
+    width: 66.66667%; }
+  .row .col-9 {
+    width: 75%; }
+  .row .col-10 {
+    width: 83.33333%; }
+  .row .col-11 {
+    width: 91.66667%; }
+  .row .col-12 {
+    width: 100%; }
+
+@font-face {
+  font-family: 'Aleo', sans-serif;
+  src: url(../fonts/aleo/aleo-regular-webfont.eot), url(../fonts/aleo/aleo-regular-webfont.svg), url(../fonts/aleo/aleo-regular-webfont.ttf), url(../fonts/aleo/aleo-regular-webfont.woff) format("woff"), url(../fonts/aleo/aleo-regular-webfont.woff2) format("woff2"); }
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: 100vh; }
+
+body {
+  font-size: 100%;
+  font-family: "Aleo", sans-serif;
+  color: #000; }
+
+ul > li > a {
+  display: block;
+  text-decoration: none; }
+
+h1 {
+  margin: 0; }
+
+h2 {
+  margin: 0; }
+
+h3 {
+  margin: 0; }
+
+h4 {
+  margin: 0; }
+
+h5 {
+  margin: 0; }
+
+h6 {
+  margin: 0; }

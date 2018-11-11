@@ -1,0 +1,48 @@
+@font-face {
+	font-family: "Aleo";
+	src: url("../fonts/aleo/aleo-regular-webfont.eot"),
+				 url("../fonts/aleo/aleo-regular-webfont.woff"),
+				 url("../fonts/aleo/aleo-regular-webfont.woff2"),
+				 url("../fonts/aleo/aleo-regular-webfont.ttf"),
+				 url("../fonts/aleo/aleo-regular-webfont.svg");
+ }
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 100%;
+	font-family: $main-font;
+	font-size: $font-size;
+	color: $white-color;
+	padding: 15px;
+}
+
+ul>li>a {
+	display: block;
+	text-decoration: none;
+}
+
+@for $i from 1 through 6 {
+	h#{$i} {
+		margin: 0;
+	}
+}
+
+.blue-btn {
+	border: none;
+	width: 225px;
+	height: 60px;
+	color: $white-color;
+	font-family: $secondary-font;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	background: linear-gradient(-125deg, $light-blue-color 0%,
+			$light-blue-color 60%,
+	 		$dark-blue-color 60%,
+			$dark-blue-color 100% );
+	cursor: pointer;
+}

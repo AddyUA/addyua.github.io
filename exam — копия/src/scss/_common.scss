@@ -1,0 +1,36 @@
+@font-face {
+	font-family: 'Aleo', sans-serif;
+	src: url(../fonts/aleo/aleo-regular-webfont.eot),
+				url(../fonts/aleo/aleo-regular-webfont.svg),
+				url(../fonts/aleo/aleo-regular-webfont.ttf),
+				url(../fonts/aleo/aleo-regular-webfont.woff) format("woff"),
+				url(../fonts/aleo/aleo-regular-webfont.woff2) format("woff2");
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	height: 100vh;
+}
+
+body {
+	font-size: 100%;
+	font-family: $main-font;
+	color: #000;
+}
+
+ul>li>a {
+	display: block;
+	text-decoration: none;
+}
+
+@for $i from 1 through 6 {
+	h#{$i} {
+		margin: 0;
+	}
+}

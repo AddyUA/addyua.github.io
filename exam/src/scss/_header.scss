@@ -1,0 +1,77 @@
+.header {
+	width: 100%;
+	min-height: 750px;
+	background: $white-color url(../img/header-bg.jpg) no-repeat 50% 50%;
+	background-size: cover;
+
+	&-section {
+		min-height: 750px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		&__title > * {
+			text-transform: uppercase;
+			font-size: 48px;
+			letter-spacing: 5px;
+			font-weight: 700;
+			margin-bottom: 10px;
+		}
+
+		&__text {
+			text-transform: capitalize;
+			font-size: 22px;
+			letter-spacing: 7px;
+			line-height: 26px;
+			margin-bottom: 50px;
+		}
+
+		&__form {
+			margin-bottom: 120px;
+			width: 80%;
+			position: relative;
+		}
+
+		&__search-input {
+			width: 100%;
+			height: 60px;
+			padding: 25px 0 25px 110px;
+			font-size: 14px;
+			letter-spacing: 3px;
+			color: #999;
+		}
+
+		&__search-btn {
+			display: inline-block;
+			font-family: $secondary-font;
+			font-size: 14px;
+			text-transform: uppercase;
+			border: none;
+			height: 56px;
+			width: 150px;
+			color: $white-color;
+			background-color: $light-blue-color;
+			position: absolute;
+			right: 2px;
+			cursor: pointer;
+			top: 2px;
+		}
+
+		&__scroll	{
+			text-transform: capitalize;
+			font-size: 14px;
+			letter-spacing: 3px;
+			margin-bottom: 5px;
+		}
+
+		&__scroll-btn {
+			display: inline-block;
+			width: 15px;
+			height: 15px;
+			border-left: 1px solid $white-color;
+			border-bottom: 1px solid $white-color;
+			transform: rotate(-45deg);
+		}
+	}
+}
