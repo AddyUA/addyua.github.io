@@ -1,2 +1,0 @@
-# natours
-Udemy course studying
