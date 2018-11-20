@@ -1,0 +1,6 @@
+body {
+	width: 99%;
+	height: 98vh;
+	background: #fff url('matrix-min.jpg') no-repeat 50% 50%;
+	background-size: cover;	
+}
