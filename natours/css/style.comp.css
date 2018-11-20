@@ -692,11 +692,11 @@ body {
   .header__logo-box {
     position: absolute;
     top: 5rem;
-    left: 6rem; }
+    left: 5rem; }
     @media only screen and (max-width: 56.25em) {
       .header__logo-box {
         top: 5rem;
-        left: 8rem; } }
+        left: 5rem; } }
   .header__logo {
     height: 3.5rem; }
   .header__text-box {
