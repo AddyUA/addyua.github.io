@@ -1,6 +1,7 @@
 @media (max-width: 678px) {
-  .row {
+  .row.custom {
     flex-direction: column;
+    justify-content: center;
     align-items: center; } }
 @media (max-height: 768px) {
   .img-logo {
