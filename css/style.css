@@ -1,15 +1,15 @@
 @media (max-height: 878px) {
   .home-inner {
-    padding-top: 4rem !important; }
+    padding-top: 3rem !important; }
 
   .heading__main {
-    font-size: 2rem !important; }
+    font-size: 1.6rem !important; }
 
   .heading__sub {
-    font-size: 1.5rem !important; }
+    font-size: 1.3rem !important; }
 
   .heading__text {
-    font-size: 1.2rem !important; } }
+    font-size: 1rem !important; } }
 @media (max-width: 978px) {
   .img-logo {
     max-width: 70%; }
