@@ -4,9 +4,6 @@
     justify-content: center;
     align-items: center; } }
 @media (max-height: 768px) {
-  .img-logo {
-    max-width: 60% !important; }
-
   .heading__main {
     font-size: 1.6rem !important; }
 
@@ -25,9 +22,6 @@
   .heading__text {
     font-size: 1rem !important; } }
 @media (max-width: 978px) {
-  .img-logo {
-    max-width: 80% !important; }
-
   .heading__main {
     font-size: 3rem !important; }
 
@@ -86,6 +80,7 @@ body {
   display: flex;
   align-items: center; }
   .main-header .img-logo {
+    padding: 2rem;
     width: 460px; }
   .main-header .info {
     display: flex;
