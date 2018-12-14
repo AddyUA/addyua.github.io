@@ -1,12 +1,16 @@
-@media (max-width: 768px) {
+@media (max-height: 878px) {
+  .home-inner {
+    padding-top: 5rem !important; } }
+@media (max-width: 978px) {
   .img-logo {
-    max-width: 60%; }
+    max-width: 70%; }
 
   .heading__main {
     font-size: 3rem !important; }
 
   .heading__sub {
     font-size: 2rem !important; } }
+/* COMMON */
 * {
   margin: 0;
   padding: 0;
@@ -60,7 +64,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); }
+    background-color: rgba(0, 0, 0, 0.6); }
   .main-header .home-inner {
     padding-top: 12rem; }
   .main-header .img-logo {
