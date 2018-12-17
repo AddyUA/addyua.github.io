@@ -1,26 +1,17 @@
-@media (max-width: 678px) {
+@media (max-width: 678px) and (orientation: landscape) {
   .row.custom {
     flex-direction: column;
     justify-content: center;
-    align-items: center; } }
-@media (max-height: 768px) {
+    align-items: center; }
+
   .heading__main {
-    font-size: 1.6rem !important; }
+    font-size: 2rem !important; }
 
   .heading__sub {
-    font-size: 1.3rem !important; }
-
-  .heading__text {
-    font-size: 1rem !important; } }
-@media (max-width: 600px) {
-  .heading__main {
     font-size: 1.6rem !important; }
 
-  .heading__sub {
-    font-size: 1.3rem !important; }
-
   .heading__text {
-    font-size: 1rem !important; } }
+    font-size: 1.4rem !important; } }
 @media (max-width: 978px) {
   .heading__main {
     font-size: 3rem !important; }
@@ -41,7 +32,7 @@ html {
 
 body {
   min-width: 100%;
-  font-family: "Oxygen", sans-serif;
+  font-family: 'Oxygen', sans-serif;
   font-weight: 300; }
 
 /* NAVIGATION */
@@ -62,12 +53,12 @@ body {
   .navbar .nav-link {
     font-size: 2rem;
     text-transform: capitalize;
-    transition: all .3s; }
+    transition: all 0.3s; }
   .navbar .dropdown-menu {
     background-color: #252525;
     font-size: 1.6rem; }
   .navbar .dropdown-item {
-    transition: all .3s; }
+    transition: all 0.3s; }
 
 /* HEADER */
 .main-header {
@@ -118,7 +109,7 @@ body {
   text-align: center; }
   .main-footer__text {
     font-size: 1.8rem;
-    letter-spacing: .2rem;
+    letter-spacing: 0.2rem;
     margin-bottom: 0 !important; }
 
 .contact__list {
