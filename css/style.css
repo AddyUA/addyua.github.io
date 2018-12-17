@@ -1,4 +1,7 @@
 @media (max-width: 678px) and (orientation: landscape) {
+  .img-logo {
+    max-width: 60% !important; }
+
   .row.custom {
     flex-direction: column;
     justify-content: center;
@@ -71,7 +74,7 @@ body {
   display: flex;
   align-items: center; }
   .main-header .img-logo {
-    padding: 2rem;
+    padding: 4rem;
     width: 460px; }
   .main-header .info {
     display: flex;
