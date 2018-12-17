@@ -30,7 +30,7 @@
     font-size: 2rem !important; }
 
   .heading__sub {
-    font-size: 1.6rem !important; }
+    font-size: 1.8rem !important; }
 
   .heading__text {
     font-size: 1.4rem !important; }
@@ -42,13 +42,16 @@
     font-size: 2rem !important; }
 
   .heading__sub {
-    font-size: 1.6rem !important; }
+    font-size: 1.8rem !important; }
 
   .heading__text {
     font-size: 1.4rem !important; }
 
   .main-footer__text {
-    font-size: 1.3rem !important; } }
+    font-size: 1.3rem !important; }
+
+  .nav-link {
+    font-size: 1.6rem !important; } }
 /* COMMON */
 * {
   margin: 0;
@@ -136,7 +139,7 @@ body {
 .main-footer {
   background-color: #252525;
   color: #cc1863;
-  padding: 3rem 0;
+  padding: 2rem 0;
   text-align: center; }
   .main-footer__text {
     font-size: 1.8rem;

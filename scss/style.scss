@@ -43,7 +43,7 @@
   }
 
   .heading__sub {
-    font-size: 1.6rem !important;
+    font-size: 1.8rem !important;
   }
 
   .heading__text {
@@ -61,7 +61,7 @@
   }
 
   .heading__sub {
-    font-size: 1.6rem !important;
+    font-size: 1.8rem !important;
   }
 
   .heading__text {
@@ -70,6 +70,10 @@
 
   .main-footer__text {
     font-size: 1.3rem !important;
+  }
+
+  .nav-link {
+    font-size: 1.6rem !important;
   }
 }
 
@@ -200,7 +204,7 @@ body {
 .main-footer {
   background-color: $battleground-color;
   color: $main-color;
-  padding: 3rem 0;
+  padding: 2rem 0;
   text-align: center;
 
   &__text {
