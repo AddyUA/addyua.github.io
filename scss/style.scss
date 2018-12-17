@@ -32,9 +32,13 @@
   }
 
   .heading__text {
-    font-size: 1.3rem !important;
+    font-size: 1.6rem !important;
   }
 }
+
+$main-color: #cc1863;
+$secondary-color: #2ac1fd;
+$battleground-color: #252525;
 
 /* COMMON */
 
@@ -57,13 +61,13 @@ body {
 /* NAVIGATION */
 
 .navbar {
-  background-color: #252525;
+  background-color: $battleground-color;
 
   .navlogo,
   .navbutton,
   .nav-link:hover,
   .dropdown-item:hover {
-    color: #cc1863;
+    color: $main-color;
     background: none;
   }
 
@@ -74,7 +78,7 @@ body {
 
   .nav-link,
   .dropdown-item {
-    color: #00b7ff;
+    color: $secondary-color;
   }
 
   .nav-link {
@@ -84,7 +88,7 @@ body {
   }
 
   .dropdown-menu {
-    background-color: #252525;
+    background-color: $battleground-color;
     font-size: 1.6rem;
   }
 
@@ -102,6 +106,7 @@ body {
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   max-height: 800px;
   display: flex;
   align-items: center;
@@ -120,10 +125,10 @@ body {
     text-align: center;
 
     &__main {
-      color: #2ac1fd;
+      color: $secondary-color;
       text-transform: uppercase;
-      font-size: 4rem;
-      letter-spacing: 10px;
+      font-size: 5rem;
+      letter-spacing: 8px;
       font-weight: 100;
       padding-bottom: 1rem;
       border-bottom: 1px solid orangered;
@@ -131,7 +136,7 @@ body {
 
     &__sub {
       text-transform: capitalize;
-      color: #cc1863;
+      color: $main-color;
       display: block;
       margin-top: 1rem;
       font-size: 2.8rem;
@@ -140,12 +145,12 @@ body {
     }
 
     &__text {
-      color: #2ac1fd;
-      font-size: 1.8rem;
+      color: $secondary-color;
+      font-size: 2rem;
 
       a {
         text-decoration: none;
-        color: #cc1863;
+        color: $main-color;
       }
     }
   }
@@ -154,8 +159,8 @@ body {
 /* FOOTER */
 
 .main-footer {
-  background-color: #252525;
-  color: #99124a;
+  background-color: $battleground-color;
+  color: $main-color;
   padding: 3rem 0;
   text-align: center;
 
@@ -180,6 +185,6 @@ body {
   }
 
   &__link {
-    color: #00b7ff;
+    color: $secondary-color;
   }
 }
