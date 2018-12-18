@@ -97,6 +97,7 @@ body {
   min-width: 100%;
   font-family: 'Oxygen', sans-serif;
   font-weight: 300;
+  background-color: $battleground-color;
 }
 
 /* NAVIGATION */
@@ -141,7 +142,7 @@ body {
 /* HEADER */
 
 .main-header {
-  min-height: 82vh;
+  min-height: 83.4vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url('../img/header-image-wide-2-min.jpg');
   background-size: cover;
