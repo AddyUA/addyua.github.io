@@ -691,13 +691,13 @@ body {
   height: 350px; }
 
 .carousel-img-1 {
-  background-image: linear-gradient(to right bottom, rgba(80, 218, 211, 0.6), rgba(114, 23, 109, 0.6)), url(../../img/img-car-1.png); }
+  background-image: linear-gradient(to right bottom, rgba(80, 218, 211, 0.6), rgba(114, 23, 109, 0.6)), url(../img/img-car-1.png); }
 
 .carousel-img-2 {
-  background-image: linear-gradient(to right bottom, rgba(80, 218, 211, 0.6), rgba(114, 23, 109, 0.6)), url(../../img/img-car-2.png); }
+  background-image: linear-gradient(to right bottom, rgba(80, 218, 211, 0.6), rgba(114, 23, 109, 0.6)), url(../img/img-car-2.png); }
 
 .carousel-img-3 {
-  background-image: linear-gradient(to right bottom, rgba(80, 218, 211, 0.6), rgba(114, 23, 109, 0.6)), url(../../img/img-car-3.png); }
+  background-image: linear-gradient(to right bottom, rgba(80, 218, 211, 0.6), rgba(114, 23, 109, 0.6)), url(../img/img-car-3.png); }
 
 .carousel-img-1,
 .carousel-img-2,
