@@ -1,0 +1,57 @@
+.header {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 85vh;
+
+	background-image: linear-gradient(to right bottom,
+		rgba($color-primary-light, 0.5),
+		rgba($color-primary-dark, 0.5)),
+		url(../img/img_1.png);
+	background-size: cover;
+	background-position: top;
+
+	@supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+		height: 95vh;
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 80% 100%, 20% 100%, 0 75vh);
+		clip-path: polygon(0 0, 100% 0, 100% 75vh, 80% 100%, 20% 100%, 0 75vh);
+	}
+
+	@media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+	only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+	only screen and (min-width: 125em) {
+		background-image: linear-gradient(to right bottom,
+			rgba($color-primary-light, 0.8),
+			rgba($color-primary-dark, 0.8)),
+			url(../img/img_1.png);
+	}
+
+	@include respond(phone) {
+		height: 75vh;
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 65vh, 80% 100%, 20% 100%, 0 65vh);
+		clip-path: polygon(0 0, 100% 0, 100% 65vh, 80% 100%, 20% 100%, 0 65vh);
+	}
+
+	&__logo-box {
+		position: absolute;
+		top: 5rem;
+		left: 5rem;
+
+		@include respond(tab-port) {
+			top: 5rem;
+			left: 5rem;
+		}
+	}
+
+	&__logo {
+		height: 5rem;
+		color: #fff;
+	}
+
+	&__text-box {
+		width: 70%;
+		text-align: center;
+	}
+}
