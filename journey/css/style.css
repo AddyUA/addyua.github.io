@@ -78,7 +78,6 @@ body {
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  /* font-size: 16px; */
   line-height: 1.7;
   color: #777; }
 
@@ -99,9 +98,7 @@ body {
     animation-name: moveInLeft;
     animation-duration: 1.2s;
     animation-timing-function: ease-out;
-    /*animation speed*/
-    /* animation-delay: 3s; */
-    /* animation-iteration-count: 2; */ }
+    /*animation speed*/ }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--main {
         letter-spacing: 1rem;
@@ -115,6 +112,7 @@ body {
     animation: moveInRight 1.2s ease-out; }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--sub {
+        font-size: 3rem;
         letter-spacing: .5rem; } }
 
 .heading-secondary {
@@ -143,6 +141,16 @@ body {
   font-size: 1.6rem; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
+
+.heading-showcase {
+  font-size: 5rem;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-showcase {
+      font-size: 3.5rem;
+      margin-bottom: 3rem; } }
 
 .u-center-text {
   text-align: center !important; }
@@ -670,9 +678,9 @@ body {
       background-image: linear-gradient(to right bottom, rgba(80, 218, 211, 0.8), rgba(114, 23, 109, 0.8)), url(../img/img_1_sm.png); } }
   @media only screen and (max-width: 37.5em) {
     .header {
-      height: 95vh;
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 80% 100%, 20% 100%, 0 75vh);
-      clip-path: polygon(0 0, 100% 0, 100% 75vh, 80% 100%, 20% 100%, 0 75vh); } }
+      height: 85vh;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
   .header__logo-box {
     position: absolute;
     top: 5rem;
@@ -956,7 +964,8 @@ body {
 
 .section-stories {
   position: relative;
-  padding: 8rem 0; }
+  padding: 8rem 0;
+  margin-bottom: 2rem; }
 
 .section-book {
   padding: 15rem 0;
