@@ -25,13 +25,13 @@
 		background-image: linear-gradient(to right bottom,
 			rgba($color-primary-light, 0.8),
 			rgba($color-primary-dark, 0.8)),
-			url(../img/img_1.png);
+			url(../img/img_1_sm.png);
 	}
 
 	@include respond(phone) {
-		height: 85vh;
-		-webkit-clip-path: polygon(0 0, 100% 0, 100% 65vh, 80% 100%, 20% 100%, 0 65vh);
-		clip-path: polygon(0 0, 100% 0, 100% 65vh, 80% 100%, 20% 100%, 0 65vh);
+		height: 95vh;
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 80% 100%, 20% 100%, 0 75vh);
+		clip-path: polygon(0 0, 100% 0, 100% 75vh, 80% 100%, 20% 100%, 0 75vh);
 	}
 
 	&__logo-box {

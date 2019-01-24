@@ -52,6 +52,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   box-sizing: inherit; }
 
 html {
+  height: 100%;
   font-size: 62.5%; }
   @media only screen and (max-width: 75em) {
     html {
@@ -64,7 +65,7 @@ html {
       font-size: 75%; } }
 
 body {
-  padding: 2.5rem;
+  padding: 2.5vh;
   box-sizing: border-box; }
   @media only screen and (max-width: 56.25em) {
     body {
@@ -666,12 +667,12 @@ body {
       clip-path: polygon(0 0, 100% 0, 100% 75vh, 80% 100%, 20% 100%, 0 75vh); } }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
-      background-image: linear-gradient(to right bottom, rgba(80, 218, 211, 0.8), rgba(114, 23, 109, 0.8)), url(../img/img_1.png); } }
+      background-image: linear-gradient(to right bottom, rgba(80, 218, 211, 0.8), rgba(114, 23, 109, 0.8)), url(../img/img_1_sm.png); } }
   @media only screen and (max-width: 37.5em) {
     .header {
-      height: 85vh;
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 65vh, 80% 100%, 20% 100%, 0 65vh);
-      clip-path: polygon(0 0, 100% 0, 100% 65vh, 80% 100%, 20% 100%, 0 65vh); } }
+      height: 95vh;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 80% 100%, 20% 100%, 0 75vh);
+      clip-path: polygon(0 0, 100% 0, 100% 75vh, 80% 100%, 20% 100%, 0 75vh); } }
   .header__logo-box {
     position: absolute;
     top: 5rem;
@@ -788,7 +789,8 @@ body {
     border-top: 1px solid #777;
     padding-top: 2rem;
     width: 80%;
-    float: right; }
+    float: right;
+    text-align: center; }
     @media only screen and (max-width: 56.25em) {
       .footer__copyright {
         width: 100%;
@@ -958,7 +960,8 @@ body {
 
 .section-book {
   padding: 15rem 0;
-  background-image: linear-gradient(to right bottom, #50dad3, #72176d); }
+  background-image: linear-gradient(to right bottom, #50dad3, #72176d);
+  margin-bottom: 2rem; }
 
 .book {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
@@ -981,3 +984,7 @@ body {
     @media only screen and (max-width: 56.25em) {
       .book__form {
         width: 100%; } }
+
+#map {
+  height: 350px;
+  margin-bottom: 2rem; }

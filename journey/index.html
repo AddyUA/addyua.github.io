@@ -14,7 +14,7 @@
 	 crossorigin="anonymous" />
 
 	<link rel="stylesheet" href="css/style.css" />
-	<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="img/fapicon.png" />
 
 	<title>Life & Journey</title>
 </head>
@@ -52,7 +52,7 @@
 
 	<header class="header">
 		<div class="header__logo-box">
-			<img src="img/Logo-2.svg" alt="Logo" class="header__logo" />
+			<img src="img/Logo-h.svg" alt="Logo" class="header__logo" />
 		</div>
 
 		<div class="header__text-box">
@@ -432,9 +432,11 @@
 		</section>
 	</main>
 
+	<div id="map"></div>
+
 	<footer class="footer">
 		<div class="footer__logo-box">
-			<img src="img/Logo-2.svg" alt="Logo" class="header__logo" />
+			<img src="img/Logo-f.svg" alt="Logo" class="header__logo" />
 		</div>
 		<div class="rows">
 			<div class="col-1-of-2">
@@ -510,15 +512,31 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
 	 crossorigin="anonymous"></script>
 
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA74I-8joUUnpN8sp83-DrXg4Yht_zOuAc&callback=initMap"
+	 async defer></script>
+
 	<script>
 		//year
 		$('#year').text(new Date().getFullYear());
 
 		//Configyre Slider
 		$('.carousel').carousel({
-			interval: 6000,
+			interval: 3000,
 			pause: 'hover'
 		});
+
+		//google maps
+		var map;
+
+		function initMap() {
+			map = new google.maps.Map(document.getElementById('map'), {
+				center: {
+					lat: 49.067174,
+					lng: 33.412206
+				},
+				zoom: 12
+			});
+		}
 	</script>
 
 </body>

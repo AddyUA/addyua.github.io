@@ -49,6 +49,8 @@
 	padding: 15rem 0;
 	background-image: linear-gradient(to right bottom,
 		$color-primary-light, $color-primary-dark);
+
+	margin-bottom: 2rem;
 }
 
 .book {
@@ -90,4 +92,14 @@
 			width: 100%;
 		}
 	}
+}
+
+#map {
+	height: 350px;
+	margin-bottom: 2rem;
+	// .ba-map {
+	// 	height: 150px;
+	// 	width: 100%;
+	// 	margin-bottom: 5rem;
+	// }
 }
