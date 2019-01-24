@@ -12,6 +12,8 @@
 	margin: 0 auto;
 	width: 100%;
 	margin-bottom: 2rem;
+
+	@include respond(tab-port) {}
 }
 
 .section-features {
@@ -43,6 +45,7 @@
 .section-stories {
 	position: relative;
 	padding: 8rem 0;
+	margin-bottom: 2rem;
 }
 
 .section-book {
@@ -97,9 +100,4 @@
 #map {
 	height: 350px;
 	margin-bottom: 2rem;
-	// .ba-map {
-	// 	height: 150px;
-	// 	width: 100%;
-	// 	margin-bottom: 5rem;
-	// }
 }
