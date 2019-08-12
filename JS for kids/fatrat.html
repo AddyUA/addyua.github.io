@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Fatrat</title>
+  </head>
+
+  <body>
+    <h1 id="main-heading">Heading</h1>
+    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+    <!-- <script>
+		/* let headingElement = document.getElementById("main-heading");
+		console.log(headingElement.innerHTML);
+
+		let newHeadingElement = prompt("Ender new Heading");
+		headingElement.innerHTML = newHeadingElement; */
+
+		// jQuery
+		// let newHeadingText = prompt('Введите новый заголовок:');
+
+		//  $('#main-heading').text(newHeadingText);
+		let myFriends = ['friend1', 'friend2', 'friend3'];
+
+		for (let i = 0; i < myFriends.length; i++) {
+			$('body').append('<p>' + myFriends[i] + '</p>');
+			// $('h1')
+			//   .hide(1000)
+			//   .show(1000);
+		}
+		$('h1').text('HappyTreeFrends');
+		$('p').hide(0).fadeIn(3000);
+		$('p').append(' Лучший');
+		let timer = 1000;
+		for (let i = 0; i < myFriends.length; i++) {
+			$('h1').fadeOut(timer).fadeIn(timer);
+			timer += 1000;
+		}
+		$("h1").fadeTo(1000, 0.5);
+	</script> -->
+    <!-- Смещение по контуру квадрата на 200рх -->
+    <script>
+      let direction = 'right';
+      let offset = 0;
+
+      $('#main-heading').offset({
+        left: offset,
+        top: offset
+      });
+
+      let moveHeading = function() {
+        if (direction === 'right') {
+          $('#main-heading').offset({
+            left: offset
+          });
+          offset++;
+          if (offset > 200) {
+            offset = 0;
+            direction = 'down';
+          }
+        } else if (direction === 'down') {
+          $('#main-heading').offset({
+            top: offset
+          });
+          offset++;
+          if (offset > 200) {
+            offset = 200;
+            direction = 'left';
+          }
+        } else if (direction === 'left') {
+          $('#main-heading').offset({
+            left: offset
+          });
+          offset--;
+          if (offset < 0) {
+            offset = 200;
+            direction = 'top';
+          }
+        } else if (direction === 'top') {
+          $('#main-heading').offset({
+            top: offset
+          });
+          offset--;
+          if (offset < 0) {
+            offset = 0;
+            direction = 'right';
+          }
+        }
+      };
+      let intervalId = setInterval(moveHeading, 30);
+      $('#main-heading').click(function() {
+        clearInterval(intervalId);
+      });
+    </script>
+    <!-- Вычисление координат -->
+    <!-- <script>
+		let clickHandler = function (event) {
+			console.log("Click! " + event.pageX + " " + event.pageY);
+		};
+		$('h1').click(clickHandler);
+	</script> -->
+    <!-- Перемищение за курсором -->
+    <!-- <script>
+		$('html').mousemove(function (event) {
+			$('#main-heading').offset({
+				left: event.pageX,
+				top: event.pageY
+			});
+		});
+	</script> -->
+    <!-- Перемищение по клику -->
+    <!-- <script>
+		$('html').click(function (event) {
+			$('#main-heading').offset({
+				left: event.pageX,
+				top: event.pageY
+			});
+		});
+	</script> -->
+  </body>
+</html>

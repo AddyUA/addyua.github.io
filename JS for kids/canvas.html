@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>canvas</title>
+</head>
+
+<body>
+	<canvas id="canvas" width="600" height="600"></canvas>
+	<script>
+		let canvas = document.getElementById('canvas');
+		let ctx = canvas.getContext('2d');
+		/*
+		   // human
+		   ctx.strokeStyle = 'Orangered';
+		      ctx.lineWidth = 4;
+		      ctx.beginPath();
+		      //	head
+		      ctx.strokeRect(20, 20, 20, 20);
+		      //	body
+		      ctx.moveTo(30, 40);
+		      ctx.lineTo(30, 80);
+		      //	right hand
+		      ctx.moveTo(30, 55);
+		      ctx.lineTo(10, 45);
+		      //	left hand
+		      ctx.moveTo(30, 55);
+		      ctx.lineTo(50, 45);
+		      //	right leg
+		      ctx.moveTo(30, 80);
+		      ctx.lineTo(10, 100);
+		      //	left leg
+		      ctx.moveTo(30, 80);
+		      ctx.lineTo(50, 100);
+		      ctx.stroke();
+		   */
+		/*
+		  // CIRCLE
+      let circle = function(x, y, radius, fill) {
+        ctx.beginPath();
+        ctx.arc(x, y, radius, 0, Math.PI * 2, false);
+        if (fill) {
+          ctx.fill();
+        } else {
+          ctx.stroke();
+        }
+      };
+      // SNOWMAN
+      let drawSnowman = function(x, y) {
+        ctx.lineWidth = 4;
+        ctx.strokeStyle = 'Blue';
+        ctx.fillStyle = 'Black';
+        circle(x, y, 30);
+        circle(x - 10, y - 5, 5, true);
+        circle(x + 10, y - 5, 5, true);
+        circle(x, y + 80, 50);
+        circle(x, y + 55, 5, true);
+        circle(x, y + 75, 5, true);
+        circle(x, y + 95, 5, true);
+        ctx.fillStyle = 'Orangered';
+        circle(x, y + 5, 5, true);
+      };
+      drawSnowman(80, 80);
+			*/
+		/*
+      ctx.lineWidth = 4;
+      var drawPoints = function(points) {
+        ctx.beginPath();
+        ctx.moveTo(points[0][0], points[0][1]);
+        for (var i = 1; i < points.length; i++) {
+          ctx.lineTo(points[i][0], points[i][1]);
+        }
+        ctx.stroke();
+      };
+      var mysteryPoints = [
+        [50, 50],
+        [50, 100],
+        [25, 120],
+        [100, 50],
+        [70, 90],
+        [100, 90],
+        [70, 120]
+      ];
+      drawPoints(mysteryPoints);
+			*/
+	</script>
+</body>
+
+</html>
