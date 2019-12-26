@@ -3,10 +3,11 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: inherit; }
 
 html {
   height: 100%;
+  box-sizing: border-box;
   font-size: 62.5%; }
 
 body {
@@ -14,15 +15,14 @@ body {
   font-weight: 400; }
 
 .container {
-  width: 128.8rem;
+  max-width: 130rem;
   margin: 0 auto;
   height: 100%;
+  padding: 0 2rem;
   position: relative; }
 
 .header {
-  height: 100vh;
-  width: 100%;
-  padding-top: 13.5rem; }
+  height: 100vh; }
   .header__logo {
     display: block;
     width: 37rem;
@@ -32,21 +32,35 @@ body {
     z-index: 2;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
     position: absolute;
-    left: -9rem;
-    bottom: 57rem; }
+    left: -7%;
+    bottom: 60%; }
+    @media only screen and (max-width: 1500px) {
+      .header__logo {
+        width: 29.6rem;
+        height: 29.6rem;
+        left: 2%;
+        bottom: 50%; } }
   .header__text {
     color: #68cbc5;
     font-size: 2.8rem;
     font-weight: 500;
     position: absolute;
     z-index: 5;
-    bottom: 78.2rem;
-    left: 1rem; }
+    bottom: 82.5%;
+    left: 1%; }
+    @media only screen and (max-width: 1500px) {
+      .header__text {
+        font-size: 2.2rem;
+        left: 8.5%;
+        bottom: 68%; } }
     .header__text-primary {
       font-size: 4.8rem;
       font-weight: 900;
       letter-spacing: 2.5px;
       color: #fff; }
+      @media only screen and (max-width: 1500px) {
+        .header__text-primary {
+          font-size: 3.8rem; } }
     .header__text-secondary {
       padding-left: 29rem; }
   .header__image-out, .header__image-screen {
@@ -56,9 +70,15 @@ body {
     transform: translate(-50%); }
   .header__image-out {
     width: 95%;
-    bottom: -0.5rem;
+    bottom: 0;
     z-index: 3; }
+    @media only screen and (max-width: 1500px) {
+      .header__image-out {
+        width: 80%; } }
   .header__image-screen {
     width: 79%;
-    bottom: 2rem;
+    bottom: 3%;
     z-index: 0; }
+    @media only screen and (max-width: 1500px) {
+      .header__image-screen {
+        width: 66%; } }

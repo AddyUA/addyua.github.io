@@ -1,3 +1,12 @@
 $main-color: #68cbc5;
 $white-color: #fff;
 $cray-color: #808080;
+
+
+@mixin respond ($breakpoint) {
+	@if $breakpoint==notepad {
+		@media only screen and (max-width: 1500px) {
+			@content
+		};
+	}
+}
