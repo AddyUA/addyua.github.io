@@ -5,7 +5,7 @@ $cray-color: #808080;
 
 @mixin respond ($breakpoint) {
 	@if $breakpoint==notepad {
-		@media only screen and (max-width: 1500px) {
+		@media only screen and (max-width: 1600px), (max-height: 900px) {
 			@content
 		};
 	}

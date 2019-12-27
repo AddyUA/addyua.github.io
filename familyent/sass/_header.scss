@@ -1,45 +1,47 @@
 .header {
 	height: 100vh;
-	// width: 100%;
-	// padding-top: 13.5rem;	
+	padding-top: 13.5rem;
+	@include respond(notepad) {
+		padding-top: 8.5rem;
+	}
 
 	&__logo {
 		display: block;
-		width: 37rem; //29.6rem (-20%)
-		height: 37rem; //29.6rem (-20%)
+		width: 37rem;
+		height: 37rem;
 		background-color: $main-color;
 		border-radius: 50%;
 		z-index: 2;
 		box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
 		position: absolute;
-		left: -7%; // -9rem
-		bottom: 60%; // 57rem
+		left: -9rem;
+		bottom: 57rem;
 
 		@include respond(notepad) {
 			width: 29.6rem;
 			height: 29.6rem;
-			left: 2%;
-			bottom: 50%;
+			left: 3rem;
+			bottom: 48rem;
 		}
 	}
 
 	&__text {
 		color: $main-color;
-		font-size: 2.8rem; //2.2rem (-20%)
+		font-size: 2.8rem;
 		font-weight: 500;
 		position: absolute;
 		z-index: 5;
-		bottom: 82.5%; //78.2rem
-		left: 1%; //1rem
+		left: 1rem;
+		bottom: 78.2rem;
 		
 		@include respond(notepad) {
 			font-size: 2.2rem; 
-			left: 8.5%;
-			bottom: 68%;
+			left: 11rem;
+			bottom: 65rem;
 		}
 
 		&-primary {
-			font-size: 4.8rem; //3.8rem (-20%)
+			font-size: 4.8rem;
 			font-weight: 900;
 			letter-spacing: 2.5px;
 			color: $white-color;	
@@ -63,7 +65,7 @@
 	}
 
 	&__image-out {
-		width: 95%; //75% (-20%)
+		width: 95%;
 		bottom: 0;
 		z-index: 3;
 
@@ -73,8 +75,8 @@
 	}	
 
 	&__image-screen {
-		width: 79%; //59% (-20%)
-		bottom: 3%; // 2.5rem
+		width: 79%;
+		bottom: 2.5rem;
 		z-index: 0;
 		@include respond(notepad) {
 			width: 66%; 
