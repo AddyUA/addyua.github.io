@@ -1,8 +1,17 @@
 .header {
 	height: 100vh;
 	padding-top: 13.5rem;
+	margin-bottom: 14rem;
 	@include respond(notepad) {
 		padding-top: 8.5rem;
+	}
+
+	&__container {
+		max-width: 128.8rem;
+		height: 100%;
+		margin: 0 auto;
+		padding: 0 2rem;
+		position: relative;
 	}
 
 	&__logo {
