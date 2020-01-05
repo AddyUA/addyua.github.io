@@ -6,89 +6,87 @@
 		padding-top: 8.5rem;
 	}
 
-	&__container {
-		max-width: 128.8rem;
-		height: 100%;
-		margin: 0 auto;
-		padding: 0 2rem;
+	&-logo {
 		position: relative;
-	}
+		height: 100%;
 
-	&__logo {
-		display: block;
-		width: 37rem;
-		height: 37rem;
-		background-color: $main-color;
-		border-radius: 50%;
-		z-index: 2;
-		box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
-		position: absolute;
-		left: -9rem;
-		bottom: 57rem;
-
-		@include respond(notepad) {
-			width: 29.6rem;
-			height: 29.6rem;
-			left: 3rem;
-			bottom: 48rem;
-		}
-	}
-
-	&__text {
-		color: $main-color;
-		font-size: 2.8rem;
-		font-weight: 500;
-		position: absolute;
-		z-index: 5;
-		left: 1rem;
-		bottom: 78.2rem;
-		
-		@include respond(notepad) {
-			font-size: 2.2rem; 
-			left: 11rem;
-			bottom: 65rem;
-		}
-
-		&-primary {
-			font-size: 4.8rem;
-			font-weight: 900;
-			letter-spacing: 2.5px;
-			color: $white-color;	
-			
+		&::before {
+			content: "";
+			display: block;
+			width: 37rem;
+			height: 37rem;
+			background-color: $main-color;
+			border-radius: 50%;
+			z-index: $z-index-high;
+			box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+			position: absolute;
+			left: -9rem;
+			bottom: 57rem;
+	
 			@include respond(notepad) {
-				font-size: 3.8rem; 
+				width: 29.6rem;
+				height: 29.6rem;
+				left: 3rem;
+				bottom: 48rem;
 			}
 		}
 
-		&-secondary {
-			padding-left: 29rem;
+		&__text {
+			color: $main-color;
+			font-size: 2.8rem;
+			font-weight: 500;
+			position: absolute;
+			z-index: $z-index-max;
+			left: 1rem;
+			bottom: 78.2rem;
+		
+			@include respond(notepad) {
+				font-size: 2.2rem; 
+				left: 11rem;
+				bottom: 65rem;
+			}
+
+			&--primary {
+				font-size: 4.8rem;
+				font-weight: 900;
+				letter-spacing: 2.5px;
+				color: $white-color;	
+				
+				@include respond(notepad) {
+					font-size: 3.8rem; 
+				}
+			}
+
+			&--secondary {
+				padding-left: 29rem;
+			}
 		}
-	}
 
-	&__image-out,
-	&__image-screen {
-		display: block;		
-		position: absolute;
-		left: 50%;
-		transform: translate(-50%);
-	}
-
-	&__image-out {
-		width: 95%;
-		bottom: 0;
-		z-index: 3;
-
-		@include respond(notepad) {
-			width: 80%; 
+		&__image-out,
+		&__image-screen {
+			display: block;		
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%);
 		}
-	}	
 
-	&__image-screen {
-		width: 79%;
-		bottom: 2.5rem;
-		z-index: 0;
-		@include respond(notepad) {
-			width: 66%; 
+		&__image-out {
+			width: 95%;
+			bottom: 0;
+			z-index: $z-index-high;
+
+			@include respond(notepad) {
+				width: 80%; 
+			}
+		}	
+
+		&__image-screen {
+			width: 79%;
+			bottom: 2.5rem;
+			z-index: $z-index-low;
+			@include respond(notepad) {
+				width: 66%; 
+			}
 		}
 	}
 }	

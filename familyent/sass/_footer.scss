@@ -1,0 +1,8 @@
+.footer {
+	height: 100vh;
+
+	&-img {
+		display: inline-block;
+		@include cite-shadow;
+	}
+}

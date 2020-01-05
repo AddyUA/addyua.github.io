@@ -1,0 +1,147 @@
+.section-mobile {
+	min-height: 100%;
+	margin-bottom: 21rem;
+
+	&__img {
+		display: inline-block;
+		@include mobile-shadow;
+	}
+}
+
+.mobile-top,
+.mobile-mid,
+.mobile-bottom {
+	height: 79.5rem;
+  margin-bottom: 10.5rem;
+}
+
+.mobile-top {
+	position: relative;	
+
+	&::after {
+		content: "";
+		display: block;
+		width: 52.5rem;
+		height: 52.5rem;
+		border-radius: 50%;
+		background-color: $main-color;
+		top: 7rem;
+		left: 35rem;
+	}
+
+	&__out,
+	&__text,
+	&::after,
+	&__screen {
+		position: absolute;
+		display: inline-block;
+	}
+
+	&__text {
+		font-size: 6rem;
+		font-weight: 900;
+		letter-spacing: .5rem;
+		text-transform: uppercase;
+		color: $white-color;
+		z-index: $z-index-mid;
+		top: 30rem;
+		left: 49rem;
+	}
+
+	&__out {
+		top: 0;
+		left: 5rem;
+		z-index: $z-index-high;
+		@include mobile-shadow;
+	}
+
+	&__screen {
+		top: 3rem;
+		left: 6rem;
+		z-index: $z-index-low;
+	}
+}
+
+.mobile-mid	{
+	display: flex;
+	justify-content: space-between;	
+}
+
+.mobile-bottom {
+	text-align: center;
+	position: relative;
+	margin-bottom: 0;
+
+	&__box-top,
+	&__box-mid,
+	&__box-bot {
+		background-color: rgba($color: #fff, $alpha: .9);
+		border: 2px solid $main-color;
+		border-radius: 1rem;
+		box-shadow: 2rem 2rem 4rem rgba($color: #000, $alpha: .1);
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__box-top {
+		font-size: 2.5rem;
+		text-transform: uppercase;
+		padding: 2rem 0;		
+		width: 30.5rem;
+		height: 22rem;		
+		top: 10rem;
+    right: 33.5rem;
+	}
+
+	&__box-mid {
+		font-size: 2.5rem;
+		text-transform: uppercase;
+		padding: 8rem 0;
+		width: 31rem;
+		height: 34.5rem;
+		top: 44rem;
+		right: 8.5rem;
+		z-index: $z-index-high;
+	}
+
+	&__box-bot {
+		padding: 2rem 1rem;
+		align-items: flex-start;
+		width: 31rem;
+		height: 34.5rem;
+		top: 58.5rem;
+    right: 34rem;
+	}
+
+	&__form-header {
+		font-size: 1.9rem;
+		font-weight: 900;
+		text-transform: uppercase;
+		letter-spacing: .1rem;
+	}
+
+	&__form-field {
+		padding-bottom: 1rem;
+		width: 100%;
+		text-align: left;
+		font-size: 1.6rem;
+		color: #c1c0c0;
+		border-bottom: 2px solid rgba($color: #000, $alpha: .4);
+	}
+
+	&__form-button {
+		display: inline-block;
+		font-size: 1.4rem;
+		font-weight: 500;
+		letter-spacing: .1rem;
+		color: $white-color;
+		width: 16.5rem;
+		height: 3.8rem;
+		background-color: $main-color;
+		border-radius: 2rem;
+		padding-top: 1rem;
+	}
+}

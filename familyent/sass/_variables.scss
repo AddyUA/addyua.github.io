@@ -1,6 +1,21 @@
 $main-color: #68cbc5;
 $white-color: #fff;
 $gray-color: #808080;
+$dark-color: #212020;
+
+$z-index-low: -1;
+$z-index-mid: 2;
+$z-index-high: 5;
+$z-index-max: 10;
+
+@mixin mobile-shadow {
+	border-radius: 5rem;
+	box-shadow: 3rem 3rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+@mixin cite-shadow {
+	box-shadow: 0 0 4rem rgba(0, 0, 0, 0.1);
+}
 
 
 @mixin respond ($breakpoint) {
