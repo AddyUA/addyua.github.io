@@ -8,7 +8,6 @@
 		
 		@include respond(1600px) {
 			width: 33rem;
-			height: 71.5rem;
 		}
 	}
 }
@@ -17,7 +16,10 @@
 .mobile-mid,
 .mobile-bottom {
 	height: 79.5rem;
-  margin-bottom: 10.5rem;
+	
+	@include respond(1600px) {
+		height: 71.5rem;
+	}
 }
 
 .mobile-top {
@@ -88,13 +90,13 @@
 
 .mobile-mid	{
 	display: flex;
-	justify-content: space-between;	
+	justify-content: space-between;
+	margin-bottom: 10.5rem;
 }
 
 .mobile-bottom {
 	text-align: center;
 	position: relative;
-	margin-bottom: 0;
 
 	&__box-top,
 	&__box-mid,
@@ -112,7 +114,7 @@
 	&__box-top {
 		font-size: 2.5rem;
 		text-transform: uppercase;
-		box-shadow: 2rem 2rem 2rem rgba($color: #000, $alpha: .1);
+		box-shadow: 2rem 2rem 3rem rgba($color: #000, $alpha: .08);
 		padding: 2rem 0;		
 		width: 30.5rem;
 		height: 22rem;		
@@ -130,7 +132,7 @@
 	&__box-mid {
 		font-size: 2.5rem;
 		text-transform: uppercase;
-		box-shadow: 2rem 2rem 4rem rgba($color: #000, $alpha: .1);
+		box-shadow: 4rem 5rem 6rem rgba($color: #000, $alpha: .08);
 		padding: 8rem 0;
 		width: 31rem;
 		height: 34.5rem;
@@ -148,7 +150,7 @@
 
 	&__box-bot {
 		padding: 2rem 1rem;
-		box-shadow: 2rem 2rem 2rem rgba($color: #000, $alpha: .1);
+		box-shadow: 2rem 2rem 4rem rgba($color: #000, $alpha: .08);
 		align-items: flex-start;
 		width: 31rem;
 		height: 34.5rem;
