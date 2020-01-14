@@ -32,6 +32,7 @@
 
 html {
 	height: 100vh;
+	width: 100%;
 	overflow-x: hidden;
 	font-size: 62.5%; //10px
 }
@@ -42,24 +43,20 @@ body {
 	color: $dark-color;
 }
 
-.main-container {
-	max-width: 128.8rem;
-	height: 100%;
-	margin: 0 auto;
-	padding: 0 2rem;
+// .container {
+// 	max-width: 128.8rem;
+// 	height: 100%;
+// 	margin: 0 auto;
+// 	padding: 0 2rem;
 
-	@include respond(1600px) {
-		max-width: 115.8rem;
-	}
-}
+// 	@include respond(1600px) {
+// 		max-width: 115.8rem;
+// 	}
+// }
 
-.sub-container {
-	max-width: 97rem;
-	height: 100%;
-	margin: 0 auto;
-	padding: 0 2rem;
-
-	&.margin {
-		margin-bottom: 10.5rem;
-	}
-}
+// .sub-wrapper {
+// 	max-width: 97rem;
+// 	height: 100%;
+// 	margin: 0 auto;
+// 	padding: 0 2rem;
+// }

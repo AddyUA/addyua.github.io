@@ -4,85 +4,95 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css" />
     <title>Familyent</title>
   </head>
-
   <body>
     <header class="header">
-      <div class="main-container">
-				<div class="header-logo">
-					<h1 class="header-logo__text">
-						<span class="header-logo__text--primary">FamilyEnt</span> – это частная
-						семейная клиника, <br />
-						<span class="header-logo__text--secondary">которая находится в Австралии.</span>
-					</h1>
-					<img class="header-logo__image-out" src="img/header-note-out.png" alt="img" />
-					<img class="header-logo__image-screen" src="img/header-note-screen.png" alt="img" />
+      <div class="container">
+				<div class="row">
+					<div class="header-logo">
+						<h1 class="header-logo__text">
+							<span class="header-logo__text--primary">FamilyEnt</span> – это частная
+							семейная клиника, <br />
+							<span class="header-logo__text--secondary">которая находится в Австралии.</span>
+						</h1>
+						<img class="header-logo__image-out" src="img/header-note-out.png" alt="img" />
+						<img class="header-logo__image-screen" src="img/header-note-screen.png" alt="img" />
+					</div>
 				</div>
       </div>
 		</header>
 		<section class="section-info">
-			<div class="sub-container">
-				<div class="info-list">
-					<h2 class="info-list__header">Задача</h2>
-					<p class="info-list__text">Разработать веб-сайт для привлечения клиентов.</p>
-					
-					<h2 class="info-list__header">Решение</h2>
-					<p class="info-list__text">В качестве решения заказчику предложили легкий <br />
-								и (простите за клише) воздушный дизайн. <br />
-								И вот что в итоге получилось. Заказчику нравится, <br />
-								а главное, клиентам заказчика тоже.
-					</p>				
-				</div>
-				<div class="info-img">
-					<img class="info-img__example" src="img/cite-block_1.png" alt="" />
+			<div class="container">
+				<div class="row row-flex">
+					<div class="col-10">
+						<div class="info-list">
+							<h2 class="info-list__header">Задача</h2>
+							<p class="info-list__text">Разработать веб-сайт для привлечения клиентов.</p>
+							
+							<h2 class="info-list__header">Решение</h2>
+							<p class="info-list__text last-item">В качестве решения заказчику предложили легкий <br />
+										и (простите за клише) воздушный дизайн. <br />
+										И вот что в итоге получилось. Заказчику нравится, <br />
+										а главное, клиентам заказчика тоже.
+							</p>				
+						</div>
+						<div class="info-img">
+							<img class="info-img__example" src="img/cite-block_1.png" alt="" />
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
 		<section class="section-mobile">
-			<div class="sub-container margin">
-				<div class="mobile-top">
-					<h2 class="mobile-top__text">mobile</h2>
-					<img class="mobile-top__out" src="img/mobile-outside.png" alt="img">
-					<img class="mobile-top__screen" src="img/mobile-screen.png" alt="img">
-				</div>
-			</div>
-			<div class="main-container">
-				<div class="mobile-mid">
-					<img class="section-mobile__img" src="img/mobile-mid_1.png" alt="img">
-					<img class="section-mobile__img" src="img/mobile-mid_2.png" alt="img">
-					<img class="section-mobile__img" src="img/mobile-mid_3.png" alt="img">
-				</div>
-				<div class="mobile-bottom">
-					<img src="img/mobile-bot.png" alt="img" class="section-mobile__img">
-					<div class="mobile-bottom__box-top">
-						<span>conditions</span>
-						<span>treated</span>
-						<span>about</span>
-						<span>gp`s</span>
-						<span>contatc</span>
+			<div class="container">
+				<div class="row">
+					<div class="mobile-top">
+						<h2 class="mobile-top__text">mobile</h2>
+						<img class="mobile-top__out" src="img/mobile-outside.png" alt="img">
+						<img class="mobile-top__screen" src="img/mobile-screen.png" alt="img">
 					</div>
-					<div class="mobile-bottom__box-mid">
-						<span>thank you!</span>
-						<img src="img/check-mark.png" alt="">
+					<div class="mobile-mid">
+						<img class="section-mobile__img" src="img/mobile-mid_1.png" alt="img">
+						<img class="section-mobile__img" src="img/mobile-mid_2.png" alt="img">
+						<img class="section-mobile__img" src="img/mobile-mid_3.png" alt="img">
 					</div>
-					<div class="mobile-bottom__box-bot">
-						<span class="mobile-bottom__form-header">registration form</span>
-						<span class="mobile-bottom__form-field">Your name</span>
-						<span class="mobile-bottom__form-field">Phone</span>
-						<span class="mobile-bottom__form-field">Chose date</span>
-						<span class="mobile-bottom__form-field">Message</span>
-						<span class="mobile-bottom__form-button">Send us a message</span>
+					<div class="mobile-bottom">
+						<img src="img/mobile-bot.png" alt="img" class="section-mobile__img">
+						<div class="mobile-bottom__box-top">
+							<span>conditions</span>
+							<span>treated</span>
+							<span>about</span>
+							<span>gp`s</span>
+							<span>contatc</span>
+						</div>
+						<div class="mobile-bottom__box-mid">
+							<span>thank you!</span>
+							<img src="img/check-mark.png" alt="">
+						</div>
+						<div class="mobile-bottom__box-bot">
+							<span class="mobile-bottom__form-header">registration form</span>
+							<span class="mobile-bottom__form-field">Your name</span>
+							<span class="mobile-bottom__form-field">Phone</span>
+							<span class="mobile-bottom__form-field">Chose date</span>
+							<span class="mobile-bottom__form-field">Message</span>
+							<span class="mobile-bottom__form-button">Send us a message</span>
+						</div>
 					</div>
 				</div>
 			</div>			
 		</section>
-		<footer class="footer">
-			<div class="sub-container">
-				<img class="footer-img" src="img/footer.png" alt="img">
+		<section class="footer">
+			<div class="container">
+				<div class="row row-flex">
+					<div class="col-10 row-flex">
+						<img class="footer-img" src="img/footer.png" alt="img">
+					</div>
+				</div>
 			</div>
-		</footer>
+		</section>
   </body>
 </html>

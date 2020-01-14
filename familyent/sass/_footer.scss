@@ -1,8 +1,10 @@
 .footer {
+	height: 100%;
 	margin-bottom: 14rem;
 		
 	&-img {
-		display: inline-block;
+		display: block;
+		width: 93rem;
 		@include cite-shadow;
 	}
 }

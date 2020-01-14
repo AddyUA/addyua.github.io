@@ -1,9 +1,9 @@
 .section-mobile {
 	min-height: 100%;
 	margin-bottom: 21rem;
-
+	
 	&__img {
-		display: inline-block;
+		display: block;
 		@include mobile-shadow;
 		
 		@include respond(1600px) {
@@ -23,7 +23,8 @@
 }
 
 .mobile-top {
-	position: relative;	
+	position: relative;
+	margin-bottom: 10.5rem;
 
 	&::after {
 		content: "";
@@ -33,12 +34,13 @@
 		border-radius: 50%;
 		background-color: $main-color;
 		top: 7rem;
-		left: 35rem;
+		left: 53rem;
+
 		@include respond(1600px) {
-			width: 47rem;
-			height: 47rem;
-			top: 10rem;
-			left: 33.5rem;
+			width: 45rem;
+    	height: 45rem;
+    	top: 9rem;
+    	left: 51rem;
 		}
 	}
 
@@ -58,15 +60,16 @@
 		color: $white-color;
 		z-index: $z-index-mid;
 		top: 30rem;
-		left: 49rem;
+		left: 66rem;
 		@include respond(1600px) {
-			left: 45rem;
+			top: 27.5rem;
+    	left: 61rem;
 		}
 	}
 
 	&__out {
 		top: 0;
-		left: 5rem;
+		left: 23rem;
 		z-index: $z-index-high;
 		@include mobile-shadow;
 
@@ -78,7 +81,7 @@
 
 	&__screen {
 		top: 3rem;
-		left: 6rem;		
+		left: 24rem;		
 		z-index: $z-index-low;
 
 		@include respond(1600px) {
@@ -95,7 +98,8 @@
 }
 
 .mobile-bottom {
-	text-align: center;
+	display: flex;
+	justify-content: center;
 	position: relative;
 
 	&__box-top,
