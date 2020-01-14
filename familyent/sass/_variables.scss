@@ -19,7 +19,7 @@ $z-index-max: 10;
 
 
 @mixin respond ($breakpoint) {
-	@if $breakpoint==notepad {
+	@if $breakpoint==1600px {
 		@media only screen and (max-width: 1600px), (max-height: 900px) {
 			@content
 		};

@@ -2,7 +2,8 @@
 	height: 100vh;
 	padding-top: 13.5rem;
 	margin-bottom: 14rem;
-	@include respond(notepad) {
+
+	@include respond(1600px) {
 		padding-top: 8.5rem;
 	}
 
@@ -23,11 +24,11 @@
 			left: -9rem;
 			bottom: 57rem;
 	
-			@include respond(notepad) {
+			@include respond(1600px) {
 				width: 29.6rem;
 				height: 29.6rem;
-				left: 3rem;
-				bottom: 48rem;
+				left: -2rem;
+    		bottom: 47rem;
 			}
 		}
 
@@ -40,10 +41,10 @@
 			left: 1rem;
 			bottom: 78.2rem;
 		
-			@include respond(notepad) {
+			@include respond(1600px) {
 				font-size: 2.2rem; 
-				left: 11rem;
-				bottom: 65rem;
+				left: 6rem;
+    		bottom: 64rem;
 			}
 
 			&--primary {
@@ -52,7 +53,7 @@
 				letter-spacing: 2.5px;
 				color: $white-color;	
 				
-				@include respond(notepad) {
+				@include respond(1600px) {
 					font-size: 3.8rem; 
 				}
 			}
@@ -75,8 +76,8 @@
 			bottom: 0;
 			z-index: $z-index-high;
 
-			@include respond(notepad) {
-				width: 80%; 
+			@include respond(1600px) {
+				width: 90%; 
 			}
 		}	
 
@@ -84,8 +85,8 @@
 			width: 79%;
 			bottom: 2.5rem;
 			z-index: $z-index-low;
-			@include respond(notepad) {
-				width: 66%; 
+			@include respond(1600px) {
+				width: 74%; 
 			}
 		}
 	}

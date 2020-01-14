@@ -17,7 +17,7 @@
 		color: $main-color;
 		margin-bottom: 2.5rem;
 	
-		@include respond(notepad) {
+		@include respond(1600px) {
 			font-size: 4rem;
 		}
 
@@ -32,6 +32,10 @@
 			margin-right: 3rem;
 			margin-top: 2rem;
 			margin-left: -5rem;
+
+			@include respond(1600px) {
+				margin-top: 1.4rem;
+			}
 		}
 	}
 
@@ -44,7 +48,18 @@
 
 .info-img {
 	width: 100%;
+	margin: 0 auto;
 	position: relative;
+	// height: 207.5rem;
+	@include cite-shadow;
+	@include respond(1600px) {
+		width: 95%;
+	}
+
+	&__example {
+		display: block;
+		width: 100%;		
+	}
 
 	&::after {
 		content: "";
@@ -54,20 +69,27 @@
 		border-radius: 50%;
 		background-color: $main-color;
 		position: absolute;
-		left: 78.5rem;
 		top: -14rem;
+		right: -14rem;
 		z-index: $z-index-low;
 	}
 
-	&__cite-element {
+	&::before {
+		content: "";
+		display: block;
+		width: 38.2rem;
+		height: 38.2rem;		
+		background: url(/img/cite-block_1e.png);
+		background-size: cover;
 		position: absolute;
-		left: 8rem;
-		top: -10rem;
-		z-index: $z-index-high;
-	}
+		top: -12rem;
+    left: 8rem;
+		z-index: $z-index-max;
 
-	&__cite-example {
-		@include cite-shadow;
+		@include respond(1600px) {
+			width: 36.2rem;
+			height: 36.2rem;
+		}
 	}
 }
 

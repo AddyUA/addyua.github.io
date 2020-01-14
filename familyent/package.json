@@ -1,16 +1,28 @@
 {
-  "name": "familyent",
+  "name": "gulp-core",
   "version": "1.0.0",
-  "description": "Landing page for Family Ent",
+  "description": "gulp builder for landing projects",
   "main": "index.js",
   "scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"compile:sass": "node-sass sass/main.scss css/style.css -w"
+		"start": "gulp",
+		"prod:css": "gulp clean"
   },
   "author": "Alexandr",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
     "node-sass": "^4.13.0"
-  }
+  },
+  "browserslist": [
+    "defaults",
+    "maintained node versions"
+  ]
 }
