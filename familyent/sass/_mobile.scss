@@ -1,6 +1,6 @@
 .section-mobile {
 	min-height: 100%;
-	margin-bottom: 21rem;
+	margin-bottom: 26rem;
 	
 	&__img {
 		display: block;
@@ -59,7 +59,7 @@
 		text-transform: uppercase;
 		color: $white-color;
 		z-index: $z-index-mid;
-		top: 30rem;
+		top: 29rem;
 		left: 66rem;
 		@include respond(1600px) {
 			top: 27.5rem;
@@ -124,6 +124,12 @@
 		height: 22rem;		
 		top: 10rem;
 		right: 33.5rem;
+
+			animation-name: scale-in;
+			animation-delay: .5s;
+			animation-duration: .6s;
+    	animation-timing-function: ease-out;
+
 		@include respond(1600px) {
 			font-size: 2.2rem;
 			width: 28.5rem;
@@ -186,7 +192,9 @@
 	}
 
 	&__form-button {
-		display: inline-block;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		font-size: 1.4rem;
 		font-weight: 500;
 		letter-spacing: .1rem;
@@ -195,6 +203,5 @@
 		height: 3.8rem;
 		background-color: $main-color;
 		border-radius: 2rem;
-		padding-top: 1rem;
 	}
 }

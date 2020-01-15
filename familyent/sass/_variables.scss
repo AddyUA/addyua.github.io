@@ -25,6 +25,65 @@ $z-index-max: 10;
   }
 }
 
+@keyframes circle {
+	0% {
+		opacity: 0;
+		transform: scale(0);
+	}
+	70% {
+		transform: scale(1.1);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@keyframes logoToLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(12rem);
+	}
+	70% {
+		transform: translateX(-1rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0)
+	}
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;		
+	}
+}
+
+[data-aos="info"] {
+	letter-spacing: -0.5em;
+	opacity: 0;
+	
+	&.aos-animate {
+		letter-spacing: normal;
+		opacity: 1;
+	}
+}
+
+[data-aos="scale-in"] {
+	transform: scaleY(0);
+  transform-origin: 100% 0%;
+  opacity: 1;
+	
+	&.aos-animate {
+		transform: scaleY(1);
+    transform-origin: 100% 0%;
+    opacity: 1;
+	}
+}
+
 @mixin respond ($breakpoint) {
 	@if $breakpoint==1600px {
 		@media only screen and (max-width: 1600px), (max-height: 900px) {
