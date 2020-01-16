@@ -12,14 +12,13 @@
 		font-weight: 900;
 		color: $main-color;
 		margin-bottom: 2.5rem;
-
-		// animation-name: info;
-		// animation-delay: .5s;
-		// animation-duration: 0.8s;
-    // animation-timing-function: ease-out;
 	
 		@include respond(1600px) {
 			font-size: 4rem;
+		}
+
+		@include respond(1280px) {
+			font-size: 3.8rem;
 		}
 
 		&::before {
@@ -36,6 +35,9 @@
 
 			@include respond(1600px) {
 				margin-top: 1.4rem;
+			}
+			@include respond(1280px) {
+				font-size: 1.3rem;
 			}
 		}
 	}
@@ -61,6 +63,9 @@
 		@include respond(1600px) {
 			width: 83.7rem;		
 		}
+		@include respond(1280px) {
+			width: 75.3rem;		
+		}
 	}
 
 	&::after {
@@ -79,6 +84,12 @@
 			width: 26.2rem;
 			height: 26.2rem;
 		}
+		@include respond(1280px) {
+			width: 23.5rem;
+			height: 23.5rem;
+			top: -11rem;
+    	right: -7rem;
+		}
 	}
 
 	&::before {
@@ -96,6 +107,10 @@
 		@include respond(1600px) {
 			width: 34.3rem;
 			height: 34.3rem;
+		}
+		@include respond(1280px) {
+			width: 30.8rem;
+			height: 30.8rem;
 		}
 	}
 }

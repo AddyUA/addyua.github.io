@@ -1,6 +1,9 @@
 .header {
 	height: 100vh;
 	margin-bottom: 14rem;
+	@include respond(1280px) {
+		margin-bottom: 12rem;
+	}
 	
 	&-logo {
 		position: relative;
@@ -30,6 +33,12 @@
 				left: -2rem;
     		bottom: 47rem;
 			}
+			@include respond(1280px) {
+				width: 26.6rem;
+				height: 26.6rem;
+				left: 0;
+				bottom: 43rem;
+			}
 		}
 
 		&__text {
@@ -51,6 +60,11 @@
 				left: 6rem;
     		bottom: 64rem;
 			}
+			@include respond(1280px) {
+				font-size: 2.1rem;
+				left: 6rem;
+				bottom: 57rem;
+			}
 
 			&--primary {
 				font-size: 4.8rem;
@@ -59,7 +73,7 @@
 				color: $white-color;	
 				
 				@include respond(1600px) {
-					font-size: 3.8rem; 
+					font-size: 3.7rem; 
 				}
 			}
 
@@ -82,12 +96,14 @@
 			z-index: $z-index-high;
 
 			animation-name: fade-in;
-			// animation-delay: .5s;
 			animation-duration: 1s;
     	animation-timing-function: ease-out;
 
 			@include respond(1600px) {
-				width: 102rem; 
+				width: 102rem;
+			}
+			@include respond(1280px) {
+				width: 91.8rem;
 			}
 		}	
 
@@ -100,6 +116,10 @@
 			@include respond(1600px) {
 				width: 85rem;
 				height: 50rem;
+			}
+			@include respond(1280px) {
+				width: 76.5rem;
+				height: 45rem;
 			}
 		}
 	}
