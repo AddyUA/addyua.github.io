@@ -7,8 +7,11 @@
 		max-width: 115.8rem;
 	}
 	@include respond(1280px) {
-		max-width: 104.2rem;
+		max-width: 98.4rem;
 	}
+	@include respond(768px) {
+		max-width: 72.9rem;
+	}	
 }
 
 .row {

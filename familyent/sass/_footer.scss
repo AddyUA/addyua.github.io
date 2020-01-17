@@ -1,10 +1,18 @@
 .footer {
 	height: 100%;
 	margin-bottom: 14rem;
-		
+	
+	@include respond(768px) {
+		margin-bottom: 10rem;
+	}
+
 	&__video {
 		display: block;
 		width: 93rem;
 		@include cite-shadow;
+
+		@include respond(768px) {
+			width: 72rem;
+		}
 	}
 }

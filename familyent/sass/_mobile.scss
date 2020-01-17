@@ -12,6 +12,9 @@
 		@include respond(1280px) {
 			width: 30rem;
 		}
+		@include respond(768px) {
+			width: 23.1rem;
+		}
 	}
 }
 
@@ -25,6 +28,9 @@
 	}
 	@include respond(1280px) {
 		height: 64.3rem;
+	}
+	@include respond(768px) {
+		height: 49.5rem;
 	}
 }
 
@@ -54,6 +60,12 @@
     	top: 10rem;
 			left: 49rem;
 		}
+		@include respond(768px) {
+			width: 30.5rem;
+   		height: 30.5rem;
+			top: 8rem;
+			left: 32rem;
+		}
 	}
 
 	&__out,
@@ -82,6 +94,11 @@
 			top: 27rem;
 			left: 59rem;
 		}
+		@include respond(768px) {
+			font-size: 4rem;
+			top: 21rem;
+			left: 39rem;
+		}
 	}
 
 	&__out {
@@ -98,6 +115,11 @@
 			width: 30rem;
 			height: 64.3rem;
 		}
+		@include respond(768px) {
+			width: 23.1rem;
+			height: 49.5rem;
+			left: 12rem;
+		}
 	}
 
 	&__screen {
@@ -112,6 +134,11 @@
 		@include respond(1280px) {
 			width: 28rem;
 			height: 59.2rem;
+		}
+		@include respond(768px) {
+			width: 21.5rem;
+			height: 45.5rem;
+			left: 13rem;
 		}
 	}
 }
@@ -165,6 +192,14 @@
 			right: 24rem;
 			top: 8rem;
 		}
+		@include respond(768px) {
+			font-size: 1.6rem;
+			width: 18.5rem;
+			height: 14rem;
+			padding: 1.2rem 0;
+			right: 17rem;
+			top: 6rem;
+		}
 	}
 
 	&__box-mid {
@@ -191,9 +226,21 @@
 			right: 6rem;
 			top: 35rem;
 		}
+		@include respond(768px) {
+			font-size: 1.9rem;
+			padding: 6rem 0;
+			width: 18rem;
+			height: 22.5rem;
+			right: 6rem;
+			top: 27rem;
+		}
+
 		&-img {
 			@include respond(1280px) {
 				width: 6rem;
+			}
+			@include respond(768px) {
+				width: 5rem;
 			}
 		}
 	}
@@ -219,6 +266,13 @@
 			right: 27rem;
 			top: 48rem;
 		}
+		@include respond(768px) {
+			padding: 1.8rem 1rem;
+			width: 20rem;
+			height: 23.5rem;
+			right: 20rem;
+			top: 39rem;
+		}
 	}
 
 	&__form-header {
@@ -229,6 +283,9 @@
 
 		@include respond(1280px) {
 			font-size: 1.6rem;
+		}
+		@include respond(768px) {
+			font-size: 1.2rem;
 		}
 	}
 
@@ -242,6 +299,9 @@
 
 		@include respond(1280px) {
 			font-size: 1.5rem;
+		}
+		@include respond(768px) {
+			font-size: 1.2rem;
 		}
 	}
 
@@ -262,6 +322,11 @@
 			font-size: 1.3rem;
 			width: 15.5rem;
 			height: 3.6rem;
+		}
+		@include respond(768px) {
+			font-size: 1.1rem;
+			width: 13rem;
+			height: 3.2rem;
 		}
 	}
 }

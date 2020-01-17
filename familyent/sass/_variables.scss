@@ -96,4 +96,10 @@ $z-index-max: 10;
 			@content
 		};
 	}
+
+	@if $breakpoint==768px {
+		@media only screen and (max-width: 768px){
+			@content
+		};
+	}
 }
