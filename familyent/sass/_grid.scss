@@ -11,6 +11,9 @@
 	}
 	@include respond(768px) {
 		max-width: 72.9rem;
+	}
+	@include respond(600px) {
+		max-width: 40rem;
 	}	
 }
 
