@@ -15,6 +15,9 @@
 		@include respond(768px) {
 			width: 23.1rem;
 		}
+		@include respond(600px) {
+			margin-right: 4rem;
+		}
 	}
 }
 
@@ -37,6 +40,10 @@
 .mobile-top {
 	position: relative;
 	margin-bottom: 10.5rem;
+	
+	@include respond(600px) {
+		margin-bottom: 8.5rem;
+	}
 
 	&::after {
 		content: "";
@@ -65,6 +72,10 @@
    		height: 30.5rem;
 			top: 8rem;
 			left: 32rem;
+		}
+		@include respond(600px) {
+			top: 6rem;
+			left: 26rem;
 		}
 	}
 
@@ -99,6 +110,9 @@
 			top: 21rem;
 			left: 39rem;
 		}
+		@include respond(600px) {
+			display: none;
+		}
 	}
 
 	&__out {
@@ -120,6 +134,9 @@
 			height: 49.5rem;
 			left: 12rem;
 		}
+		@include respond(600px) {
+			left: 7rem;
+		}
 	}
 
 	&__screen {
@@ -140,19 +157,31 @@
 			height: 45.5rem;
 			left: 13rem;
 		}
+		@include respond(600px) {
+			left: 8rem;
+		}
 	}
 }
 
 .mobile-mid	{
-	display: flex;
+	display: flex; 
 	justify-content: space-between;
 	margin-bottom: 10.5rem;
+	@include respond(600px) {
+		padding-left: 2rem;
+		margin-bottom: 8.5rem;
+	}
 }
 
 .mobile-bottom {
 	display: flex;
 	justify-content: center;
 	position: relative;
+	@include respond(600px) {
+		padding-left: 2rem;
+		margin-bottom: 8.5rem;
+		justify-content: flex-start;
+	}
 
 	&__box-top,
 	&__box-mid,
@@ -200,6 +229,9 @@
 			right: 17rem;
 			top: 6rem;
 		}
+		@include respond(600px) {
+			right: 5rem;
+		}
 	}
 
 	&__box-mid {
@@ -233,6 +265,10 @@
 			height: 22.5rem;
 			right: 6rem;
 			top: 27rem;
+		}
+		@include respond(600px) {
+			top: 55rem;
+			right: 5rem;
 		}
 
 		&-img {
@@ -272,6 +308,10 @@
 			height: 23.5rem;
 			right: 20rem;
 			top: 39rem;
+		}
+		@include respond(600px) {
+			top: 44rem;
+			right: 13rem;
 		}
 	}
 

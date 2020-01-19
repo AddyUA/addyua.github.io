@@ -78,6 +78,10 @@
 
 .col-10 {
 	width: calc(100% / 12 * 10);
+
+	@include respond(600px) {
+		width: calc(100% / 12 * 12);
+	}
 }
 
 // .col-11 {

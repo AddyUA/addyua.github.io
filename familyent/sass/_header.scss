@@ -12,7 +12,7 @@
 			height: 70vh;
 		}
 		@include respond(600px) {
-			height: 100vh;
+			height: 95vh;
 		}	
 
 		&::before {
@@ -106,9 +106,6 @@
 					font-size: 4.8rem;
 					color: $main-color;
 				}
-				@include respond(600px) {
-				
-				}
 			}
 
 			&--secondary {
@@ -122,7 +119,7 @@
 			font-size: 1.7rem;
 			line-height: 2.5rem;
 			font-weight: 500;
-			padding-top: 8rem;
+			padding-top: 10rem;
 			padding-left: 2rem;
 			width: 100%;
 
@@ -144,9 +141,6 @@
 			position: absolute;
 			left: 50%;
 			transform: translate(-50%);
-			@include respond(600px) {
-				left: 70%;
-			}	
 		}
 
 		&__image-out {
@@ -168,8 +162,9 @@
 				width: 72.8rem;
 			}
 			@include respond(600px) {
-				width: 60.8rem;
+				width: 49.8rem;
 				height: 33rem;
+				left: 58%;
 			}
 		}	
 

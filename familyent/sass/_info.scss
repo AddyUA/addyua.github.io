@@ -5,6 +5,9 @@
 	@include respond(768px) {
 		margin-bottom: 12rem;
 	}
+	@include respond(600px) {
+		margin-bottom: 9rem;
+	}
 }
 
 .info-list {
@@ -13,6 +16,11 @@
 
 	@include respond(768px) {
 		padding-left: 8.5rem;
+	}
+	@include respond(600px) {
+		padding-left: 4rem;
+		margin-bottom: 14rem;
+		width: 31rem;
 	}
 	
 	&__header {
@@ -24,13 +32,8 @@
 		@include respond(1600px) {
 			font-size: 4rem;
 		}
-
 		@include respond(1280px) {
 			font-size: 3.8rem;
-		}
-
-		@include respond(768px) {
-			font-size: 3rem;
 		}
 
 		&::before {
@@ -41,7 +44,6 @@
 			border-radius: 50%;
 			background-color: $main-color;
 			float: left;
-			margin-right: 3rem;
 			margin-top: 2rem;
 			margin-left: -5rem;
 
@@ -51,8 +53,8 @@
 			@include respond(1280px) {
 				margin-top: 1.2rem;
 			}
-			@include respond(768px) {
-				margin-top: .8rem;
+			@include respond(600px) {
+				margin-left: -3.5rem;
 			}
 		}
 	}
@@ -61,15 +63,28 @@
 		font-size: 2rem;
 		color: $gray-color;
 		margin-bottom: 4rem;
+		@include respond(600px) {
+			font-size: 1.8rem;
+		}
 	}
 }
 
-.info-img {
-	display: flex;
-	justify-content: center;
+.info-img {	
 	position: relative;
+	
+
+	&__wrapper {
+		display: flex;
+		justify-content: center;
+		@include respond(600px) {
+			max-width: 34.5rem;
+			@include cite-shadow;
+			overflow: hidden;
+		}
+	}
 
 	&__example {
+		display: block;
 		width: 93rem;		
 		@include cite-shadow;
 
@@ -81,6 +96,9 @@
 		}
 		@include respond(768px) {
 			width: 57.7rem;	
+		}
+		@include respond(600px) {			
+			width: 41.5rem;
 		}
 	}
 
@@ -112,6 +130,12 @@
 			top: -9rem;
 			right: -9rem;
 		}
+		@include respond(600px) {
+			width: 14.5rem;
+			height: 14.5rem;
+			top: -4rem;
+			right: -9rem;
+		}
 	}
 
 	&::before {
@@ -140,6 +164,12 @@
 			height: 25.8rem;
 			top: -10rem;
 			left: 2rem;
+		}
+		@include respond(768px) {
+			width: 16.5rem;
+			height: 16.5rem;
+			top: -5rem;
+			left: 0.5rem;
 		}
 	}
 }

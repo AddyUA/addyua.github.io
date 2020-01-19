@@ -5,6 +5,9 @@
 	@include respond(768px) {
 		margin-bottom: 10rem;
 	}
+	@include respond(600px) {
+		margin-bottom: 6rem;
+	}
 
 	&__video {
 		display: block;
@@ -13,6 +16,9 @@
 
 		@include respond(768px) {
 			width: 72rem;
+		}
+		@include respond(600px) {
+			width: 35rem;
 		}
 	}
 }
