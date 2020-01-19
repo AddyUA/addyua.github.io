@@ -1,6 +1,9 @@
 .section-mobile {
 	min-height: 100%;
 	margin-bottom: 26rem;
+	@include respond(600px) {
+		margin-bottom: 34rem;
+	}
 	
 	&__img {
 		display: block;
@@ -203,7 +206,6 @@
 	position: relative;
 	@include respond(600px) {
 		padding-left: 2rem;
-		margin-bottom: 8.5rem;
 		justify-content: flex-start;
 	}
 
