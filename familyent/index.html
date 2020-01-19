@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css" />
@@ -12,15 +13,15 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-				<div class="row">
+      <div class="container-s">
+				<div class="row-s">
 					<div class="header-logo">
 						<h1 class="header-logo__text">
 							<span class="header-logo__text--primary">FamilyEnt</span> – это частная
 							семейная клиника, <br />
 							<span class="header-logo__text--secondary">которая находится в Австралии.</span>
 						</h1>
-						<h1 class="header-logo__text-mobile">
+						<h1 class="header-logo__text-mobile" data-aos="fade-left" data-aos-delay="500">
 							<span class="header-logo__text-mobile-primary">FamilyEnt </span> – это частная семейная клиника,	которая находится в Австралии.
 						</h1>
 						<img class="header-logo__image-out" src="img/header-note-out.png" alt="img" />
@@ -34,9 +35,9 @@
       </div>
 		</header>
 		<section class="section-info">
-			<div class="container">
-				<div class="row row-flex">
-					<div class="col-10">
+			<div class="container-s">
+				<div class="row-s row-flex-s">
+					<div class="col-10-s">
 						<div class="info-list">
 							<h2 class="info-list__header" data-aos="info" data-aos-offset="200">Задача</h2>
 							<p class="info-list__text">Разработать веб-сайт для привлечения клиентов.</p>
@@ -50,7 +51,7 @@
 						</div>
 						<div class="info-img">
 							<div class="info-img__wrapper">
-								<img class="info-img__example" src="img/cite-block_1.png" alt="" />								
+								<img class="info-img__example" src="img/cite-block_1.png" alt="" />
 							</div>
 						</div>
 					</div>
@@ -58,17 +59,33 @@
 			</div>
 		</section>
 		<section class="section-mobile">
-			<div class="container">
-				<div class="row">
+			<div class="container-s">
+				<div class="row-s">
 					<div class="mobile-top">
+						
 						<h2 class="mobile-top__text">mobile</h2>
 						<img class="mobile-top__out" src="img/mobile-outside.png" alt="img">
 						<img class="mobile-top__screen" src="img/mobile-screen.png" alt="img">
 					</div>
 					<div class="mobile-mid">
-						<img class="section-mobile__img" src="img/mobile-mid_1.png" alt="img" data-aos="fade-right" data-aos-offset="200">
-						<img class="section-mobile__img" src="img/mobile-mid_2.png" alt="img" data-aos="fade-right" data-aos-delay="200" data-aos-offset="200">
-						<img class="section-mobile__img" src="img/mobile-mid_3.png" alt="img" data-aos="fade-right" data-aos-delay="400" data-aos-offset="200">
+							<div id="mobile-mid__crousel" class="carousel slide" data-ride="carousel">
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img class="section-mobile__img" src="img/mobile-mid_1.png" alt="img" >
+									</div>
+									<div class="carousel-item">
+										<img class="section-mobile__img" src="img/mobile-mid_2.png" alt="img" >
+									</div>
+									<div class="carousel-item">
+										<img class="section-mobile__img" src="img/mobile-mid_3.png" alt="img" >
+									</div>
+								</div>
+							</div>
+						<div class="mobile-mid__block">
+							<img class="section-mobile__img" src="img/mobile-mid_1.png" alt="img" data-aos="fade-right" data-aos-offset="200">
+							<img class="section-mobile__img" src="img/mobile-mid_2.png" alt="img" data-aos="fade-right" data-aos-delay="200" data-aos-offset="200">
+							<img class="section-mobile__img" src="img/mobile-mid_3.png" alt="img" data-aos="fade-right" data-aos-delay="400" data-aos-offset="200">
+						</div>
 					</div>
 					<div class="mobile-bottom">
 						<img src="img/mobile-bot.png" alt="img" class="section-mobile__img" data-aos="fade-up" data-aos-offset="200">
@@ -96,9 +113,9 @@
 			</div>			
 		</section>
 		<section class="footer">
-			<div class="container">
-				<div class="row row-flex">
-					<div class="col-10 row-flex">
+			<div class="container-s">
+				<div class="row-s row-flex-s">
+					<div class="col-10-s row-flex-s">
 						<video class="footer__video" autoplay muted loop>
 							<source src="img/cite-screen.mp4" type="video/mp4" />
 							<source src="img/cite-screen.webm" type="video/webm" />
@@ -108,6 +125,9 @@
 				</div>
 			</div>
 		</section>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script>
 			AOS.init({

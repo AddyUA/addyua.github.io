@@ -1,4 +1,4 @@
-.container {
+.container-s {
 	max-width: 128.8rem;
 	padding: 0 1.5rem;
 	margin: 0 auto;
@@ -17,13 +17,13 @@
 	}	
 }
 
-.row {
+.row-s {
 	margin-left: -1.5rem;
 	margin-right: -1.5rem;
 	clear: both;
 }
 
-.row-flex {
+.row-flex-s {
 	display: flex;
 	justify-content: center;
 }
@@ -76,11 +76,11 @@
 // 	width: calc(100% / 12 * 9);
 // }
 
-.col-10 {
+.col-10-s {
 	width: calc(100% / 12 * 10);
 
 	@include respond(600px) {
-		width: calc(100% / 12 * 12);
+		width: calc(100% / 12 * 12) !important
 	}
 }
 

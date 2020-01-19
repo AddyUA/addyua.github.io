@@ -16,7 +16,7 @@
 			width: 23.1rem;
 		}
 		@include respond(600px) {
-			margin-right: 4rem;
+			// margin-right: 4rem;
 		}
 	}
 }
@@ -24,6 +24,7 @@
 .mobile-top,
 .mobile-mid,
 .mobile-bottom {
+	width: 100%;
 	height: 79.5rem;
 	
 	@include respond(1600px) {
@@ -39,6 +40,7 @@
 
 .mobile-top {
 	position: relative;
+	width: 100%;
 	margin-bottom: 10.5rem;
 	
 	@include respond(600px) {
@@ -164,12 +166,34 @@
 }
 
 .mobile-mid	{
-	display: flex; 
-	justify-content: space-between;
 	margin-bottom: 10.5rem;
 	@include respond(600px) {
-		padding-left: 2rem;
+		// padding-left: 2rem;
+		height: 55rem;
+		margin-bottom: 6.5rem;		
+	}
+	
+	&__block {
+		display: flex; 
+		justify-content: space-between;
+		@include respond(600px) {			
+			display: none;
+		}
+	}
+}
+
+#mobile-mid__crousel {
+	display: none;	
+	height: 100%;
+	// width: 100%;
+	@include respond(600px) {	
 		margin-bottom: 8.5rem;
+		display: block;
+	}
+
+	& .carousel-inner {
+		height: 100%;
+		padding-left: 7rem;
 	}
 }
 
