@@ -69,9 +69,10 @@
 	}
 }
 
-.info-img {	
-	position: relative;
-	
+.info-img {
+	display: flex;
+	justify-content: center;
+	position: relative;	
 
 	&__wrapper {
 		display: flex;
