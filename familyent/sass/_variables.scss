@@ -49,7 +49,21 @@ $z-index-max: 10;
 	}
 	100% {
 		opacity: 1;
-		transform: translate(0)
+		transform: translateX(0);
+	}
+}
+
+@keyframes logoToRight {
+	0% {
+		opacity: 0;
+		transform: translateX(-12rem);
+	}
+	70% {
+		transform: translateX(1rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
 	}
 }
 

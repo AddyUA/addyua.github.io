@@ -30,7 +30,7 @@
 
 			animation-name: circle;
 			animation-delay: .5s;
-			animation-duration: .8s;
+			animation-duration: 1s;
     	animation-timing-function: ease-out;
 	
 			@include respond(1600px) {
@@ -67,11 +67,11 @@
 			z-index: $z-index-max;
 			left: 1rem;
 			bottom: 78.2rem;
-
+			
 			animation-name: logoToLeft;
-			animation-delay: .5s;
+			animation-delay: 1.2s;
 			animation-duration: 1.3s;
-    	animation-timing-function: ease-out;			
+    	animation-timing-function: ease-out;
 		
 			@include respond(1600px) {
 				font-size: 2.2rem; 
@@ -97,7 +97,7 @@
 				font-size: 4.8rem;
 				font-weight: 900;
 				letter-spacing: 2.5px;
-				color: $white-color;	
+				color: $white-color;				
 				
 				@include respond(1600px) {
 					font-size: 3.7rem; 
@@ -119,9 +119,14 @@
 			font-size: 1.7rem;
 			line-height: 2.5rem;
 			font-weight: 500;
-			padding-top: 10rem;
+			padding-top: 8rem;
 			padding-left: 2rem;
 			width: 100%;
+
+			animation-name: logoToLeft;
+			animation-delay: 1.2s;
+			animation-duration: 1.3s;
+    	animation-timing-function: ease-out;
 
 			@include respond(600px) {
 				display: block;

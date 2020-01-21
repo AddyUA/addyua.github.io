@@ -50,8 +50,7 @@
 		margin-bottom: 8.5rem;
 	}
 
-	&::after {
-		content: "";
+	&__circle {
 		display: block;
 		width: 52.5rem;
 		height: 52.5rem;
@@ -86,7 +85,7 @@
 
 	&__out,
 	&__text,
-	&::after,
+	&__circle,
 	&__screen {
 		position: absolute;
 		display: block;
