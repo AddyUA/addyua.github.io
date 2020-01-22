@@ -328,7 +328,7 @@
 			top: 48rem;
 		}
 		@include respond(768px) {
-			padding: 1.8rem 1rem;
+			padding: 1rem 1rem;
 			width: 20rem;
 			height: 23.5rem;
 			right: 20rem;
@@ -337,7 +337,7 @@
 		@include respond(600px) {
 			top: 44rem;
 			right: 13rem;
-		}
+		}		
 	}
 
 	&__form-header {

@@ -9,10 +9,10 @@
 		height: 100vh;
 
 		@include respond(768px) {
-			height: 70vh;
+			height: 80vh;
 		}
 		@include respond(600px) {
-			height: 92vh;
+			height: 92.5vh;
 		}	
 
 		&::before {
