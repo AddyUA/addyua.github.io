@@ -366,6 +366,7 @@
 			font-size: 1.5rem;
 		}
 		@include respond(768px) {
+			padding-bottom: .5rem;
 			font-size: 1.2rem;
 		}
 	}
