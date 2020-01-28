@@ -15,7 +15,7 @@
 			height: 92.5vh;
 		}	
 
-		&::before {
+		&__circle {
 			content: "";
 			display: block;
 			width: 37rem;
@@ -28,10 +28,10 @@
 			left: -9rem;
 			bottom: 57rem;
 
-			animation-name: circle;
-			animation-delay: .5s;
-			animation-duration: 1s;
-    	animation-timing-function: ease-out;
+			// animation-name: circle;
+			// animation-delay: .5s;
+			// animation-duration: 1s;
+    	// animation-timing-function: ease-out;
 	
 			@include respond(1600px) {
 				width: 29.6rem;
@@ -68,10 +68,10 @@
 			left: 1rem;
 			bottom: 78.2rem;
 			
-			animation-name: logoToLeft;
-			animation-delay: 1.2s;
-			animation-duration: 1.3s;
-    	animation-timing-function: ease-out;
+			// animation-name: logoToLeft;
+			// animation-delay: 1.2s;
+			// animation-duration: 1.3s;
+    	// animation-timing-function: ease-out;
 		
 			@include respond(1600px) {
 				font-size: 2.2rem; 
@@ -123,10 +123,10 @@
 			padding-left: 2rem;
 			width: 100%;
 
-			animation-name: logoToLeft;
-			animation-delay: 1.2s;
-			animation-duration: 1.3s;
-    	animation-timing-function: ease-out;
+			// animation-name: logoToLeft;
+			// animation-delay: 1.2s;
+			// animation-duration: 1.3s;
+    	// animation-timing-function: ease-out;
 
 			@include respond(600px) {
 				display: block;
@@ -153,9 +153,9 @@
 			bottom: 0;
 			z-index: $z-index-high;
 
-			animation-name: fade-in;
-			animation-duration: 1s;
-    	animation-timing-function: ease-out;
+			// animation-name: fade-in;
+			// animation-duration: 1s;
+    	// animation-timing-function: ease-out;
 
 			@include respond(1600px) {
 				width: 102rem;
