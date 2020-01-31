@@ -172,7 +172,7 @@
 	@include respond(600px) {
 		// padding-left: 2rem;
 		height: 55rem;
-		margin-bottom: 6.5rem;		
+		margin-bottom: 8.5rem;		
 	}
 	
 	&__block {
@@ -191,6 +191,25 @@
 	@include respond(600px) {	
 		margin-bottom: 8.5rem;
 		display: block;
+	}
+
+	& .carousel-indicators {
+
+		bottom: -4rem;
+
+		& li {
+			width: 1.3rem;
+			height: 1.3rem;
+			margin: 0 1.5rem;
+			border: 0.2rem solid #e1e1e1;
+			border-radius: 50%;
+			background-color: #fff;
+			transition: 1s ease;
+
+			&.active {
+				background-color: #e1e1e1;
+			}
+		}
 	}
 
 	& .carousel-inner {
