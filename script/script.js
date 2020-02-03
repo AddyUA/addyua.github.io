@@ -5,28 +5,26 @@ tl.from('.navigation', {
   duration: 1,
   ease: 'power2.out'
 })
-  .from(
-    '.footer-block',
-    {
-      y: +100,
-      duration: 1,
-      ease: 'power2.out'
-    },
-    '-= 1'
-  )
+  // .from(
+  //   '.footer-block',
+  //   {
+  //     y: +100,
+  //     duration: 1,
+  //     ease: 'power2.out'
+  //   },
+  //   '-= 1'
+  // )
   .from('.right', {
     opacity: 0,
-    x: '+100%',
+    // x: '+100%',
     duration: 1,
     ease: 'back.out(1.2)'
   })
   .from(
     '.left',
     {
-      // opacity: 0,
       scale: 0,
       delay: 0.5,
-      // x: '-100%',
       duration: 0.8,
       ease: 'back.out(1.7)'
     },
