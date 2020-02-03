@@ -1,0 +1,41 @@
+/* FOOTER */
+
+.footer {
+  width: 100%;
+  min-height: 80px;
+  background-color: $battleground-color;
+  color: $main-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact {
+    &__list {
+      list-style: none;
+    }
+
+    &__item {
+      display: inline-block;
+
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+
+    &__link {
+      color: $secondary-color;
+    }
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 0 !important;
+  }
+}

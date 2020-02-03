@@ -1,0 +1,23 @@
+$main-color: #cc1863;
+$secondary-color: #2ac1fd;
+$battleground-color: #252525;
+
+/* COMMON */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-width: 100%;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 300;
+  background-color: $battleground-color;
+  overflow: hidden;
+}
