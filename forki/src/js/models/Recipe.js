@@ -14,8 +14,6 @@ export default class Recipe {
       this.img = res.data.recipe.image_url;
       this.url = res.data.recipe.source_url;
       this.ingredients = res.data.recipe.ingredients;
-      // console.log(res);
-      // console.log(this.title, this.author);
     } catch (error) {
       console.log(error);
       alert('Something went wrong: :(');
@@ -97,7 +95,6 @@ export default class Recipe {
   updateServings(type) {
     // Servings
     const newServings = type === 'dec' ? this.servings - 1 : this.servings + 1;
-    console.log(newServings);
 
     //Ingredients
     this.ingredients.forEach((ing) => {
