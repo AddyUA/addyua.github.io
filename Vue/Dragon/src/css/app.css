@@ -5,11 +5,20 @@
 }
 
 .healthbar {
-  width: 80%;
+  border-radius: 5px;
+  width: 90%;
   height: 40px;
   background-color: #eee;
   margin: auto;
   transition: width 500ms;
+}
+
+.health {
+  height: 100%;
+  border-radius: 5px 2px 2px 5px;
+  background-color: green;
+  color: white;
+  transition: width 0.5s;
 }
 
 .controls,
@@ -19,6 +28,18 @@
   padding: 10px;
   border: 1px solid #ccc;
   box-shadow: 0px 3px 6px #ccc;
+}
+
+.attack-score {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  left: 15px;
+  bottom: 35px;
+  font-style: italic;
 }
 
 .turn {
@@ -39,12 +60,12 @@
 }
 
 .log ul .player-turn {
-  color: blue;
+  color: #3a137a;
   background-color: #e4e8ff;
 }
 
 .log ul .monster-turn {
-  color: red;
+  color: #c8206f;
   background-color: #ffd4d5;
 }
 
@@ -54,6 +75,11 @@ button {
   padding: 12px;
   box-shadow: 0 1px 1px black;
   margin: 10px;
+  outline: none;
+}
+
+.fix {
+  position: relative;
 }
 
 #start-game {
