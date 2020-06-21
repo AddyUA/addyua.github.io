@@ -4,14 +4,18 @@
       <div class="small-6 columns fix">
         <h1 class="text-center">PLAYER</h1>
         <div class="attack-score">
-          <span
-            style="color: #ff3f43"
-            v-if="damages.player.attack > 0"
-          >hit: {{ damages.player.attack }}</span>
-          <span
-            style="color: #76ff7e"
-            v-if="damages.player.heal > 0"
-          >heal: {{ damages.player.heal }}</span>
+          <transition name="fade">
+            <span
+              style="color: #ff3f43"
+              v-if="damages.player.attack > 0"
+            >hit: {{ damages.player.attack }}</span>
+          </transition>
+          <transition name="fade">
+            <span
+              style="color: #76ff7e"
+              v-if="damages.player.heal > 0"
+            >heal: {{ damages.player.heal }}</span>
+          </transition>
         </div>
         <div class="healthbar">
           <div class="health text-center" :style="{width: playerHealth + '%'}">{{ playerHealth }}</div>
@@ -20,14 +24,18 @@
       <div class="small-6 columns fix">
         <h1 class="text-center">MONSTER</h1>
         <div class="attack-score">
-          <span
-            style="color: #3a137a"
-            v-if="damages.monster.attack > 0"
-          >hit: {{ damages.monster.attack }}</span>
-          <span
-            style="color: #ff9a2b"
-            v-if="damages.monster.specialAttack > 0"
-          >special: {{ damages.monster.specialAttack }}</span>
+          <transition name="fade">
+            <span
+              style="color: #3a137a"
+              v-if="damages.monster.attack > 0"
+            >hit: {{ damages.monster.attack }}</span>
+          </transition>
+          <transition name="fade">
+            <span
+              style="color: #ff9a2b"
+              v-if="damages.monster.specialAttack > 0"
+            >special: {{ damages.monster.specialAttack }}</span>
+          </transition>
         </div>
         <div class="healthbar">
           <div class="health text-center" :style="{width: monsterHealth + '%'}">{{ monsterHealth }}</div>
