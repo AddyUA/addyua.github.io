@@ -1,7 +1,13 @@
-.text-center {
+.center-element {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.center-element__img {
+  width: 150px;
+  height: 140px;
+  margin: 10px;
 }
 
 .healthbar {
@@ -16,9 +22,17 @@
 .health {
   height: 100%;
   border-radius: 5px 2px 2px 5px;
-  background-color: green;
+
   color: white;
   transition: width 0.5s;
+}
+
+.health-knight {
+  background-color: rgb(223, 60, 49);
+}
+
+.health-mosnter {
+  background-color: rgb(178, 81, 223);
 }
 
 .controls,
@@ -60,12 +74,12 @@
 }
 
 .log ul .player-turn {
-  color: #3a137a;
+  color: #c8206f;
   background-color: #e4e8ff;
 }
 
 .log ul .monster-turn {
-  color: #c8206f;
+  color: #3a137a;
   background-color: #ffd4d5;
 }
 

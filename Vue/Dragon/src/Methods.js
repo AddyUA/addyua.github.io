@@ -18,7 +18,7 @@ export const Methods = {
 
       this.turns.unshift({
         isPlayer: true,
-        text: `Player HITS for ${damage}`
+        text: `Knight HITS for ${damage}`
       });
 
       if (this.checkWin()) {
@@ -39,7 +39,7 @@ export const Methods = {
 
         this.turns.unshift({
           isPlayer: true,
-          text: `Player special attack HITS for ${damage}`
+          text: `Knight SPECIAL attack HITS for ${damage}`
         });
 
         if (this.checkWin()) {
@@ -63,7 +63,7 @@ export const Methods = {
 
         this.turns.unshift({
           isPlayer: true,
-          text: `Player healed for ${health}`
+          text: `Knight HEALED for ${health}`
         });
 
         this.monsterAttack();
@@ -95,7 +95,7 @@ export const Methods = {
     },
     checkWin() {
       if (this.monsterHealth <= 0) {
-        if (confirm(`You WON! Wanna Try Again?`)) {
+        if (confirm(`VICTORY!!! Wanna Try Again?`)) {
           this.startGame();
         } else {
           this.gameIsRunning = false;

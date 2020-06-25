@@ -1,32 +1,39 @@
 <template>
-  <div>
+  <div style="padding: 25px">
     <section class="row">
       <div class="small-6 columns fix">
-        <h1 class="text-center">PLAYER</h1>
+        <div class="center-element">
+          <img src="./img/knight.png" alt="knight" class="center-element__img" />
+        </div>
         <div class="attack-score">
           <transition name="fade">
             <span
-              style="color: #ff3f43"
+              style="color: #3a137a"
               v-if="damages.player.attack > 0"
             >hit: {{ damages.player.attack }}</span>
           </transition>
           <transition name="fade">
             <span
-              style="color: #76ff7e"
+              style="color: #55bb5c"
               v-if="damages.player.heal > 0"
             >heal: {{ damages.player.heal }}</span>
           </transition>
         </div>
         <div class="healthbar">
-          <div class="health text-center" :style="{width: playerHealth + '%'}">{{ playerHealth }}</div>
+          <div
+            class="health health-knight center-element"
+            :style="{width: playerHealth + '%'}"
+          >{{ playerHealth }}</div>
         </div>
       </div>
       <div class="small-6 columns fix">
-        <h1 class="text-center">MONSTER</h1>
+        <div class="center-element">
+          <img src="./img/monster.png" alt="knight" class="center-element__img" />
+        </div>
         <div class="attack-score">
           <transition name="fade">
             <span
-              style="color: #3a137a"
+              style="color: #ff3f43"
               v-if="damages.monster.attack > 0"
             >hit: {{ damages.monster.attack }}</span>
           </transition>
@@ -38,7 +45,10 @@
           </transition>
         </div>
         <div class="healthbar">
-          <div class="health text-center" :style="{width: monsterHealth + '%'}">{{ monsterHealth }}</div>
+          <div
+            class="health health-mosnter center-element"
+            :style="{width: monsterHealth + '%'}"
+          >{{ monsterHealth }}</div>
         </div>
       </div>
     </section>
