@@ -1,0 +1,48 @@
+@import 'variables';
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.main-btn {
+  background-color: $main-color;
+  color: #fff;
+
+  border-radius: $radius;
+}
+
+.btn {
+  border: none;
+  border-radius: $radius;
+  box-shadow: 0 2px 3px #bbbbbb;
+
+  padding: $padding $padding * 2;
+  background-color: $main-color;
+  color: #fff;
+
+  transition: background-color 0.5s;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: #2b9b6c;
+  }
+
+  &:active {
+    box-shadow: 0 1px 2px #bbbbbb;
+  }
+}
+
+.v-cart__header,
+.v-catalog__header {
+  color: #14306d;
+}
+
+.v-cart__link_to_catalog,
+.v-catalog__link_to_cart {
+  position: absolute;
+  top: 1%;
+  left: 28%;
+}
