@@ -6,7 +6,7 @@
         <span class="v-catalog__link_to_cart-item">{{ CART.length }}</span>
       </div>
     </router-link>
-    <h1 class="v-catalog__header">Catalog</h1>
+    <h1 class="v-catalog__header">SHOP</h1>
     <div class="v-catalog__list">
       <app-catalog-item
         v-for="product in PRODUCTS"

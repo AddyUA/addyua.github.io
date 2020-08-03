@@ -1,7 +1,7 @@
 <template>
   <div class="v-cart">
     <router-link :to="{ name: 'Catalog' }">
-      <div class="v-cart__link_to_catalog main-btn">
+      <div class="v-cart__link_to_catalog main-btn shop">
         <font-awesome-icon :icon="['fas', 'shopping-bag']" size="3x" />
       </div>
     </router-link>
@@ -74,7 +74,7 @@ export default {
 
 <style lang="scss">
 .v-cart {
-  margin-bottom: 100px;
+  margin-bottom: 120px;
   &__link_to_catalog {
     padding: $padding $padding * 1.5;
   }
@@ -82,6 +82,7 @@ export default {
     background-color: #2b9b6c;
     color: #fff;
     font-size: 20px;
+    max-height: 100px;
 
     position: fixed;
     bottom: 0;

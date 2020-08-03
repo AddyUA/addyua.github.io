@@ -6,10 +6,15 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #fff;
+}
+
 .main-btn {
-  background-color: $main-color;
+  background-color: #00aeff;
   color: #fff;
 
+  border: 5px solid orange;
   border-radius: $radius;
 }
 
@@ -38,11 +43,16 @@
 .v-cart__header,
 .v-catalog__header {
   color: #14306d;
+  margin-bottom: 50px;
 }
 
 .v-cart__link_to_catalog,
 .v-catalog__link_to_cart {
   position: absolute;
-  top: 1%;
+  top: 2%;
   left: 28%;
+
+  @include respond(600px) {
+    left: 5%;
+  }
 }

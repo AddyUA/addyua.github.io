@@ -5,7 +5,7 @@
       :src="require(`../assets/img/${productData.image}`)"
       alt="image"
     />
-    <p class="v-catalog-item__name">{{ productData.name }}</p>
+    <p class="v-catalog-item__name">"{{ productData.name }}"</p>
     <p class="v-catalog-item__category">{{ productData.category }}</p>
     <p class="v-catalog-item__price">Price: {{ productData.price }}$</p>
 
@@ -41,8 +41,13 @@ export default {
   box-shadow: 0 0 8px #e0e0e0;
   padding: $padding * 2;
   margin: $margin * 2;
+
+  background-color: $item-color;
   &__image {
-    max-width: 100px;
+    max-width: 150px;
+  }
+  &__category {
+    font-weight: bold;
   }
   &__add {
     min-width: 120px;
