@@ -43,13 +43,13 @@ body {
 .v-cart__header,
 .v-catalog__header {
   color: #14306d;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 
 .v-cart__link_to_catalog,
 .v-catalog__link_to_cart {
   position: absolute;
-  top: 2%;
+  top: 1.5%;
   left: 28%;
 
   @include respond(600px) {

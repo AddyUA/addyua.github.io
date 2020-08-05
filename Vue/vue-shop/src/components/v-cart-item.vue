@@ -10,9 +10,7 @@
       <p class="v-cart-item__category">{{ cartItemData.category }}</p>
       <p>
         Total:
-        <span class="v-cart-item__total"
-          >{{ cartItemData.price * cartItemData.quantity }}$</span
-        >
+        <span class="v-cart-item__total">{{ cartItemData.price * cartItemData.quantity }}$</span>
       </p>
       <p>{{ cartItemData.article }}</p>
     </div>
@@ -20,9 +18,7 @@
       <p>Qty:</p>
       <p>
         <span class="v-cart-item__quantity_button" @click="decItem">-</span>
-        <span class="v-cart-item__quantity_qty">
-          {{ cartItemData.quantity }}
-        </span>
+        <span class="v-cart-item__quantity_qty">{{ cartItemData.quantity }}</span>
         <span class="v-cart-item__quantity_button" @click="incItem">+</span>
       </p>
     </div>
@@ -38,8 +34,8 @@ export default {
       type: Object,
       default() {
         return {}
-      },
-    },
+      }
+    }
   },
   methods: {
     decItem() {
@@ -50,11 +46,11 @@ export default {
     },
     deleteFromCart() {
       this.$emit('deleteFromCart')
-    },
+    }
   },
   mounted() {
     this.$set(this.cartItemData, 'quantity', 1)
-  },
+  }
 }
 </script>
 
