@@ -73,7 +73,7 @@ export default {
 <style lang="scss">
 .v-catalog-item {
   flex-basis: 25%;
-  box-shadow: 0 0 8px #e0e0e0;
+  box-shadow: 0 0 8px #bbbbbb;
   padding: $padding * 1.5;
   margin: $margin * 1.5;
 

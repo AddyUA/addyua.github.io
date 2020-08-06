@@ -22,7 +22,7 @@
         <span class="v-cart-item__quantity_button" @click="incItem">+</span>
       </p>
     </div>
-    <button class="btn" @click="deleteFromCart">Delete</button>
+    <button class="btn delete" @click="deleteFromCart">Delete</button>
   </div>
 </template>
 
@@ -83,13 +83,17 @@ export default {
     padding: $padding;
 
     font-size: 20px;
-    color: #00b7ff;
+    color: orangered;
 
     cursor: pointer;
   }
 
   &__quantity_qty {
     cursor: pointer;
+  }
+
+  .delete {
+    background-color: #00b7ff;
   }
 }
 </style>

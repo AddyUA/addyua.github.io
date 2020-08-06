@@ -60,7 +60,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(185, 185, 185, 0.7);
+  // background-color: rgba(185, 185, 185, 0.7);
 
   position: absolute;
   top: 0;
@@ -73,9 +73,10 @@ export default {
   position: fixed;
   top: 50px;
   min-width: 400px;
+  border-radius: $radius * 2;
 
   background-color: #fff;
-  box-shadow: 0 0 8px #e0e0e0;
+  box-shadow: 0 0 10px rgba(150, 150, 150, 0.588);
 
   z-index: 10;
 

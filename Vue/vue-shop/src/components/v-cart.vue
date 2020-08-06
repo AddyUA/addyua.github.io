@@ -1,10 +1,13 @@
 <template>
   <div class="v-cart">
-    <router-link :to="{ name: 'Catalog' }">
-      <div class="v-cart__link_to_catalog main-btn shop">
-        <font-awesome-icon :icon="['fas', 'shopping-bag']" size="3x" />
-      </div>
-    </router-link>
+    <div class="v-cart__link_to_catalog">
+      <router-link :to="{ name: 'Catalog' }">
+        <div class="main-btn shop">
+          <font-awesome-icon :icon="['fas', 'shopping-bag']" size="3x" />
+        </div>
+      </router-link>
+      <div class="v-cart__total">Total: {{ cartTotalCost }} $</div>
+    </div>
     <h1 class="v-cart__header">Cart</h1>
     <p v-if="!cartData.length">There are no pruducts in cart ...</p>
     <app-cart-item
@@ -15,10 +18,6 @@
       @increment="increment(index)"
       @decrement="decrement(index)"
     />
-    <div class="v-cart__total">
-      <p class="total__name">Total:</p>
-      <p>{{ cartTotalCost }} $</p>
-    </div>
   </div>
 </template>
 
@@ -33,11 +32,11 @@ export default {
       type: Array,
       default() {
         return []
-      },
-    },
+      }
+    }
   },
   components: {
-    appCartItem: VCartItem,
+    appCartItem: VCartItem
   },
   computed: {
     cartTotalCost() {
@@ -55,7 +54,7 @@ export default {
       } else return 0
 
       return result
-    },
+    }
   },
   methods: {
     ...mapActions(['DELETE_FROM_CART', 'INC_CART_ITEM', 'DEC_CART_ITEM']),
@@ -67,33 +66,30 @@ export default {
     },
     deleteFromCart(index) {
       this.DELETE_FROM_CART(index)
-    },
-  },
+    }
+  }
 }
 </script>
 
 <style lang="scss">
 .v-cart {
-  margin-bottom: 120px;
+  margin-bottom: 20px;
+
   &__link_to_catalog {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .shop {
     padding: $padding $padding * 1.5;
   }
   &__total {
-    background-color: #2b9b6c;
-    color: #fff;
-    font-size: 20px;
-    max-height: 100px;
-
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: $padding * 3;
-    display: flex;
-    justify-content: center;
-  }
-  .total__name {
-    margin-right: $margin * 2;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff713d;
+    padding-bottom: $padding;
   }
 }
 </style>

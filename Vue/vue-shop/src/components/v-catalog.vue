@@ -25,17 +25,17 @@ import { mapActions, mapGetters } from 'vuex'
 export default {
   name: 'v-catalog',
   components: {
-    appCatalogItem: VCatalogItem,
+    appCatalogItem: VCatalogItem
   },
   computed: {
-    ...mapGetters(['PRODUCTS', 'CART']),
+    ...mapGetters(['PRODUCTS', 'CART'])
   },
   methods: {
     ...mapActions(['GET_PRODUCTS_FROM_API', 'ADD_TO_CART']),
     addToCart(data) {
       this.ADD_TO_CART(data)
-    },
-  },
+    }
+  }
   // For API
   // mounted() {
   //   this.GET_PRODUCTS_FROM_API().then((response) => {
