@@ -52,7 +52,7 @@ body {
   top: 1.5%;
   left: 28%;
 
-  @include respond(800px) {
+  @include respond(1000px) {
     left: 5%;
   }
 }
