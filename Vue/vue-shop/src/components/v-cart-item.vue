@@ -10,7 +10,9 @@
       <p class="v-cart-item__category">{{ cartItemData.category }}</p>
       <p>
         Total:
-        <span class="v-cart-item__total">{{ cartItemData.price * cartItemData.quantity }}$</span>
+        <span
+          class="v-cart-item__total"
+        >{{ cartItemData.price * cartItemData.quantity }}$</span>
       </p>
       <p>{{ cartItemData.article }}</p>
     </div>
@@ -28,30 +30,30 @@
 
 <script>
 export default {
-  name: 'v-cart-item',
+  name: "v-cart-item",
   props: {
     cartItemData: {
       type: Object,
       default() {
-        return {}
-      }
-    }
+        return {};
+      },
+    },
   },
   methods: {
     decItem() {
-      this.$emit('decrement')
+      this.$emit("decrement");
     },
     incItem() {
-      this.$emit('increment')
+      this.$emit("increment");
     },
     deleteFromCart() {
-      this.$emit('deleteFromCart')
-    }
+      this.$emit("deleteFromCart");
+    },
   },
   mounted() {
-    this.$set(this.cartItemData, 'quantity', 1)
-  }
-}
+    this.$set(this.cartItemData, "quantity", 1);
+  },
+};
 </script>
 
 <style lang="scss">
@@ -77,6 +79,9 @@ export default {
   &__total {
     font-size: 18px;
     color: #00aeff;
+  }
+  &__quantity {
+    user-select: none;
   }
   &__quantity_button {
     margin: $margin;
