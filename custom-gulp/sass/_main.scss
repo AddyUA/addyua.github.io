@@ -1,16 +1,16 @@
 .main-content {
   min-height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('../img/header-image-wide-2-min.jpg');
+    url("../img/header-image-wide-2-min.jpg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  max-height: 800px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 
   /* HEADER */
   /* NAVIGATION */
