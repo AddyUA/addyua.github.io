@@ -1,2 +1,2 @@
 # addyua.github.io
-beetroot studying projects
+my portfolio projects
