@@ -16,8 +16,16 @@ class GameScene extends Phaser.Scene {
   create() {
     this.createTable();
     this.createCards();
-    // todo
-    this.coordinates = this.getCardPositions();
+    this.initCards();
+  }
+
+  initCards() {
+    let positions = this.getCardPositions();
+
+    this.cards.forEach(card => {
+      let position = positions.pop();
+      card.setPosition(position.x, position.y);
+    });
   }
 
   createTable() {
@@ -26,13 +34,11 @@ class GameScene extends Phaser.Scene {
 
   createCards() {
     this.cards = [];
-    let positions = this.getCardPositions();
-
-    Phaser.Utils.Array.Shuffle(positions);
 
     for (let value of config.cards) {
-      for (let i = 0; i < 10; i++) {
-        this.cards.push(new Card(this, value, positions.pop()));
+      for (let i = 0; i < 9; i++) {
+        console.log(value);
+        this.cards.push(new Card(this, value));
       }
     }
 
@@ -40,6 +46,8 @@ class GameScene extends Phaser.Scene {
   }
 
   onCardClicked(_pointer, card) {
+    console.log(card.x, card.y);
+
     if (card.click) {
       for (let i = 0; i < this.cards.length; i++) {
         if (
@@ -66,10 +74,12 @@ class GameScene extends Phaser.Scene {
   getCardPositions() {
     const positions = [];
     const cardTexture = this.textures.get("card").getSourceImage();
-    const cardWidth = cardTexture.width + 24;
-    const cardHeight = cardTexture.height + 19;
-    const offsetX = this.sys.game.config.width - cardWidth * config.cols + 10;
-    const offsetY = this.sys.game.config.height - cardHeight * config.rows + 8;
+    const cardWidth = cardTexture.width + 24.5;
+    const cardHeight = cardTexture.height + 19.5;
+    const offsetX =
+      this.sys.game.config.width - cardWidth * config.cols + cardWidth / 2;
+    const offsetY =
+      this.sys.game.config.height - cardHeight * config.rows + cardHeight / 2;
 
     for (let row = 0; row < config.rows; row++) {
       for (let col = 0; col < config.cols; col++) {
@@ -79,6 +89,6 @@ class GameScene extends Phaser.Scene {
         });
       }
     }
-    return positions;
+    return Phaser.Utils.Array.Shuffle(positions);
   }
 }
