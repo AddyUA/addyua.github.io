@@ -45,24 +45,20 @@ class GameScene extends Phaser.Scene {
   }
 
   onCardClicked(_pointer, card) {
-    // console.log(card.x, card.y);
-
     if (card.click) {
       for (let i = 0; i < this.cards.length; i++) {
         if (
           (this.cards[i].value === card.value && this.cards[i].y === card.y) ||
           (this.cards[i].value === card.value && this.cards[i].x === card.x)
         ) {
-          if (
-            this.cards[i].x > card.x + 50.5 ||
-            this.cards[i].x < card.x - 50.5 ||
-            this.cards[i].y > card.y + 45.5 ||
-            this.cards[i].y < card.y - 45.5
-          ) {
-            // console.log(this.cards[i]);
-            continue;
-          }
-          // console.log(this.cards[i]);
+          // if (
+          //   this.cards[i].x > card.x + 50.5 ||
+          //   this.cards[i].x < card.x - 50.5 ||
+          //   this.cards[i].y > card.y + 45.5 ||
+          //   this.cards[i].y < card.y - 45.5
+          // ) {
+          //   continue;
+          // }
           this.cards[i].close();
         }
       }

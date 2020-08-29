@@ -8,10 +8,10 @@ class Card extends Phaser.GameObjects.Sprite {
     this.click = true;
     this.scale = 0;
 
-    this.show();
+    this.showAnimation();
   }
 
-  show() {
+  showAnimation() {
     this.scene.tweens.add({
       targets: this,
       scale: 1,

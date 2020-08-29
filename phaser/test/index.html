@@ -9,6 +9,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         padding: 0;
         margin: 0;
         box-sizing: border-box;
@@ -17,8 +18,16 @@
     <title>Document</title>
   </head>
   <body>
+    <p style="max-width: 500px; margin-bottom: 25px">
+      Представьте себе, что у нас есть прямоугольное игровое поле, состоящее из
+      ячеек. В каждой ячейке может находится один игровой элемент. При выборе
+      любой из ячеек мы должны удалить из поля элемент и всю связанную группу
+      таких же элементов. Как бы Вы реализовывали поиск элементов такой группы?
+      Оформите решение задачи в виде кода. Решение должно быть оформлено с
+      использованием принципов ООП и фреймворка Phaser.js в качестве рендерера.
+    </p>
     <!-- ♠♣♢♡ -->
-    <script src="assets/scripts/phaser.min.js"></script>
+    <script src="assets/scripts/phaser.js"></script>
     <script src="assets/scripts/Card.js"></script>
     <script src="assets/scripts/GameClass.js"></script>
     <script src="assets/scripts/index.js"></script>
