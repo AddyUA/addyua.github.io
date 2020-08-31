@@ -62,14 +62,6 @@ export default class GameScene extends Phaser.Scene {
           (this.cards[i].value === card.value && this.cards[i].y === card.y) ||
           (this.cards[i].value === card.value && this.cards[i].x === card.x)
         ) {
-          // if (
-          //   this.cards[i].x > card.x + 50.5 ||
-          //   this.cards[i].x < card.x - 50.5 ||
-          //   this.cards[i].y > card.y + 45.5 ||
-          //   this.cards[i].y < card.y - 45.5
-          // ) {
-          //   continue;
-          // }
           this.cards[i].close();
         }
       }

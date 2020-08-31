@@ -24,11 +24,9 @@ export class Card extends Phaser.GameObjects.Sprite {
   }
 
   close() {
-    console.log("close");
     this.setTexture("card");
   }
   open() {
-    console.log("open");
     this.setTexture(`card${this.value}`);
   }
 }
