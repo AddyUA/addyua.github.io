@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <h2>Add Task:</h2>
+      <input type="text" @keyup.enter="addTask" v-model="currentTask" />
+      <hr />
+      <ul>
+        <li v-for="(task, index) in tasks" :key="task.text">
+          <input
+            v-if="task.isEditing"
+            type="text"
+            @keyup.enter="editTask(index)"
+            v-model="editValue"
+          />
+          <span
+            v-else
+            :class="{ strike : task.isComplete }"
+            @click="task.isComplete = !task.isComplete"
+          >
+            {{ task.text }}</span
+          >
+          <!-- <button @click="task.isEditing = !task.isEditing">Edit</button> -->
+          <button @click="changeTaskName(task.text, index)">Edit</button>
+          <button @click="removeTask(index)">remove</button>
+        </li>
+      </ul>
+    </div>
+    <script src="vue.min.js"></script>
+    <script>
+      new Vue({
+        el: "#app",
+        data: {
+          currentTask: "",
+          editValue: "",
+          tasks: []
+        },
+        methods: {
+          addTask() {
+            if (this.currentTask != "") {
+              this.tasks.push({
+                text: this.currentTask,
+                isComplete: false,
+                isEditing: false
+              });
+              this.currentTask = "";
+            }
+            /* console.log(this.tasks) */
+          },
+          removeTask(index) {
+            this.tasks.splice(index, 1);
+            /* console.log(this.tasks) */
+          },
+          changeTaskName(taskText, index) {
+            this.editValue = taskText;
+            this.tasks[index].isEditing = !this.tasks[index].isEditing;
+          },
+          editTask(index) {
+            this.tasks[index].text = this.editValue;
+            this.editValue = "";
+            this.tasks[index].isEditing = !this.tasks[index].isEditing;
+
+            /* console.log(this.tasks) */
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
